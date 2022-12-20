@@ -1,13 +1,38 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0%;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  /* display: flex; */
+  justify-content: center;
+  align-items: top;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f4cbd7;
+  background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142036/proy/fondos/beautiful-flowers_t8hlgl.webp);
+}
+body{
+  /* background: #f4cbd7!important;  */
+  background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142036/proy/fondos/beautiful-flowers_t8hlgl.webp);
+}
+.beauty-spa {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem!important;
+color: #f4cbd7!important;
+Font-weight: 400;
+}
+.menu{
+  font-size: 1.5rem!important;
+  background: #f4cbd7!important;
+}
+.logo{
+  height: 2.5rem;
+  margin-right: 1rem;
+  background: #f4cbd7!important;
+  border-radius: 1rem;
+  padding: .3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
