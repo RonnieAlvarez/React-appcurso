@@ -1,13 +1,12 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Badge from "react-bootstrap/Badge";
 import logo from "./comp_imgs/logo-mel.svg";
-import shoppingCart from "./comp_imgs/shopping_cart.svg";
+import { CartWidget } from "./CartWidget";
 
-export const NavBarComponet = () => {
+export const NavBar = () => {
   return (
     <div>
       <Navbar
@@ -28,16 +27,13 @@ export const NavBarComponet = () => {
             <Nav className="me-auto">
               <Nav.Link href="#tratamientos">Tratamientos</Nav.Link>
               <NavDropdown title="Productos" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Para el Cabello</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
+                 Para la Cara
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                <NavDropdown.Item href="#action/3.3">
+                Perfumería H/M
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
@@ -47,28 +43,9 @@ export const NavBarComponet = () => {
                 Dank memes
               </Nav.Link>
             </Nav>
-            </Navbar.Collapse>
+          </Navbar.Collapse>
 
-            <Navbar bg="dark">
-              <Container>
-                <Navbar.Brand href="#home">
-                  <img
-                    src={shoppingCart}
-                    width="30"
-                    height="30"
-                    className="d-inline-block  position-relative"
-                    alt="Shopping Cart"
-                  />
-                  <Badge
-                    className="fs-6 text-dark position-absolute top-25 start-75 translate-middle"
-                    pill
-                    bg="info"
-                  >
-                    9
-                  </Badge>
-                </Navbar.Brand>
-              </Container>
-            </Navbar>
+          <CartWidget />
         </Container>
       </Navbar>
 
@@ -77,4 +54,4 @@ export const NavBarComponet = () => {
   );
 };
 
-export default NavBarComponet;
+export default NavBar;
