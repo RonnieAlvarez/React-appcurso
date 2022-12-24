@@ -16,6 +16,7 @@ html {
 }
 body{
   /* background: #f4cbd7!important;  */
+  height: 100vh;
   background-image: url(https://res.cloudinary.com/rac506/image/upload/v1662142036/proy/fondos/beautiful-flowers_t8hlgl.webp);
 }
 .beauty-spa {
@@ -36,3 +37,77 @@ Font-weight: 400;
   padding: .3rem;
 }
 
+.layout{
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas: 
+      "header header header header"
+      "content content content content"
+      "footer footer footer footer"
+  ;
+  grid-template-rows: 100px auto 70px;
+}
+
+.header{
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+}
+.content{
+  grid-area: content;
+  height: 65vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+footer{
+  height: 70px;
+  grid-area: footer;
+  width: 100vw;
+  /* background: #454545; */
+  color: black;
+  border-top: 1px solid #454545;
+  text-align: end;
+  line-height: 68px ;
+  padding: 5px 10px 0 0!important;
+  margin: 0% !important;
+}
+.product{
+  flex-grow: 1;
+  transition: transform 250ms;
+}
+
+.product:hover {
+  transform: translateY(-3px);
+}
+
+.btnColor{
+  background-color: #d7aeb2f3!important;
+  color: rgb(5, 5, 5)!important;
+  border-color: #454545!important;
+}
+
+.badgeColor{ 
+ border-radius: 100%;
+ font-weight: 500!important;
+ background-color: #d7aeb2f3!important;
+ padding: 3px 8px;
+ color: rgb(5, 5, 5)!important;
+}
+@media (max-width:600px){
+  .content{
+    height: 100vh;
+    flex-direction: row;
+      /* flex-flow: column rap; */
+      justify-content: center;
+      align-items: center;
+      overflow: scroll;
+  }
+  .produc{
+    margin: 5px 0!important;
+  }
+}

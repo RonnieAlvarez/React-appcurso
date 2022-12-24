@@ -11,27 +11,22 @@ import {
 export default function SocialFollow() {
   return (
 <div class="social-container">
-      <h3>Social Follow</h3>
-   
-      <a href="https://www.youtube.com/c/jamesqquick"
-        className="youtube social">
+      <a href="https://www.youtube.com/c/@tvracinternacional3928"
+        className="youtube social ">
         <FontAwesomeIcon icon={faYoutube} size="2x" />
       </a>
-      <a href="https://www.facebook.com/learnbuildteach/"
+      <a href="https://www.facebook.com/tvrac.net/"
         className="facebook social">
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
-      <a href="https://www.twitter.com/jamesqquick" className="twitter social">
+      <a href="https://www.twitter.com/@506rac" className="twitter social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
-      <a href="https://www.instagram.com/learnbuildteach"
+      <a href="https://www.instagram.com/tvracinternacional"
         className="instagram social">
         <FontAwesomeIcon icon={faInstagram} size="2x" />
       </a>
 
-   
-   
-   
 </div>
   );
 }

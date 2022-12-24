@@ -8,7 +8,7 @@ import { CartWidget } from "./CartWidget";
 
 export const NavBar = () => {
   return (
-    <div>
+    <div className="Header">
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -18,14 +18,13 @@ export const NavBar = () => {
       >
         <Container className="d-sm-flex justify-content-sm-center">
           <img src={logo} className="logo" alt="Logo Mel Beauty & Spa" />
-
           <Navbar.Brand className="beauty-spa fs-md-2 fs-sm-5 " href="#home">
             Mel Beauty & Spa
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#tratamientos">Tratamientos</Nav.Link>
+              <Nav.Link href="#tratamientos">Ubicación</Nav.Link>
               <NavDropdown title="Productos" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Para el Cabello</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
@@ -38,17 +37,12 @@ export const NavBar = () => {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
+              <Nav.Link href="#carrito">Ir al Carrito</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-
           <CartWidget />
         </Container>
       </Navbar>
-
       <hr />
     </div>
   );

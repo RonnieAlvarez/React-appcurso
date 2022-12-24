@@ -4,11 +4,10 @@ import Badge from "react-bootstrap/Badge";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 
-
 export const CartWidget = () => {
   return (
     <div>
-      <Navbar bg="dark">
+      <Navbar>
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -18,13 +17,9 @@ export const CartWidget = () => {
               className="d-inline-block  position-relative"
               alt="Shopping Cart"
             />
-            <Badge
-              className="fs-6 text-dark position-absolute top-25 start-75 translate-middle"
-              pill
-              bg="info"
-            >
+            <span className="fs-6 text-dark position-absolute top-25 start-75 translate-middle badgeColor">
               9
-            </Badge>
+            </span>
           </Navbar.Brand>
         </Container>
       </Navbar>
