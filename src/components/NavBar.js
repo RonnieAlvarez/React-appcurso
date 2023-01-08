@@ -40,7 +40,7 @@ export const NavBar = () => {
               <Nav.Link href="#carrito">Ir al Carrito</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <CartWidget />
+          <CartWidget/>
         </Container>
       </Navbar>
       <hr />

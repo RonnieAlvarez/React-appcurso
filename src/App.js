@@ -5,9 +5,9 @@ import { ItemListContainer } from "./components/ItemListContainer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <NavBar />
-      <ItemListContainer greeting="Productos" />
+      <ItemListContainer  greeting="Productos" />
       <Footer />
     </div>
   );
