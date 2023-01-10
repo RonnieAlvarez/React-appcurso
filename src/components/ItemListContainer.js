@@ -27,7 +27,6 @@ export const ItemListContainer = (props) => {
 
   const handleFilter = (e) => {
     const copia = productos.filter((producto) => {
-      
       if (e.target.dataset.filter === "title") {
         return producto.title
           .toLowerCase()
@@ -46,27 +45,33 @@ export const ItemListContainer = (props) => {
     });
     setProductosFiltrados(copia);
   };
-  console.log(productosFiltrados);
 
   return (
     <div className="d-flex flex-column ">
       <h2 className="mb-3 d-flex align-item-start ms-3">
         {props.greeting} {!cargo ? "Cargando..." : ""}
       </h2>
-      <nav>
+      <nav className="filtros ">
+        <h4>Filtros: </h4>
         <input
+          className="inputs"
           data-filter="title"
           onChange={handleFilter}
           type="text"
           placeholder="Nombre del producto"
         />
         <input
+          className="inputs"
           data-filter="price"
           onChange={handleFilter}
           type="number"
           placeholder="mayor a"
         />
-        <select data-filter="category.name" onChange={handleFilter}>
+        <select
+          data-filter="category.name"
+          onChange={handleFilter}
+          className="inputs"
+        >
           <option value="todos">Todos</option>
           <option value="Clothes">Clothes</option>
           <option value="Electronics">Electronics</option>
@@ -75,6 +80,7 @@ export const ItemListContainer = (props) => {
           <option value="Others">Others</option>
         </select>
       </nav>
+      <hr />
       <div className="content">
         {productosFiltrados.map((producto) => (
           <Productos producto={producto} />

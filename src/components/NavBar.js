@@ -17,23 +17,20 @@ export const NavBar = () => {
         variant="dark"
       >
         <Container className="d-sm-flex justify-content-sm-center">
-          <img src={logo} className="logo" alt="Logo Mel Beauty & Spa" />
+          <img src={logo} className="logo" alt="Logo Mel online store" />
           <Navbar.Brand className="beauty-spa fs-md-2 fs-sm-5 " href="#home">
-            Mel Beauty & Spa
+            Mel On-line Store
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#tratamientos">Ubicación</Nav.Link>
               <NavDropdown title="Productos" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Para el Cabello</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                 Para la Cara
-                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">Clothes</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Electronics</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.3">
-                Perfumería H/M
-                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Furniture</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Shoes</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.5">Others</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav>
@@ -43,7 +40,7 @@ export const NavBar = () => {
           <CartWidget/>
         </Container>
       </Navbar>
-      <hr />
+    
     </div>
   );
 };
