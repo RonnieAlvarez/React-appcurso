@@ -1,15 +1,16 @@
 import React from "react";
 import { Productos } from "./Productos";
 import { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 
 export const ItemListContainer = (props) => {
   const [cargo, setCargo] = useState(false);
   const [productos, setProductos] = useState([]);
   const [productosFiltrados, setProductosFiltrados] = useState([]);
+  const { categoria } = useParams();
 
   useEffect(() => {
     const pedido = fetch("https://api.escuelajs.co/api/v1/products");
-
     pedido
       .then((response) => {
         const productos = response.json();
@@ -27,24 +28,47 @@ export const ItemListContainer = (props) => {
 
   const handleFilter = (e) => {
     const copia = productos.filter((producto) => {
-      if (e.target.dataset.filter === "title") {
-        return producto.title
-          .toLowerCase()
-          .includes(e.target.value.toLowerCase());
-      }
-
-      if (e.target.dataset.filter === "price") {
-        return producto.price > Number(e.target.value);
-      }
-
-      if (e.target.value === "todos") {
+      if (e.target.value == "") {
         return producto;
       } else {
-        return producto.category.name === e.target.value;
+        if (e.target.dataset.filter === "id") {
+          return producto.id == Number(e.target.value);
+        }
+        if (e.target.dataset.filter === "title") {
+          return producto.title
+            .toLowerCase()
+            .includes(e.target.value.toLowerCase());
+        }
+        if (e.target.dataset.filter === "price") {
+          return producto.price > Number(e.target.value);
+        }
+        console.log(categoria);
+        if (Number(categoria)>0){
+          return producto.category.id === Number(categoria);
+        }
+        if (e.target.value === "todos") {
+          return producto;
+        } else {
+          return producto.category.name === e.target.value;
+        }
       }
     });
     setProductosFiltrados(copia);
   };
+
+  const handleCategories = (categoria) => {
+    const copia = productos.filter((producto) => {
+      if (categoria == "") {
+        return producto;
+      } else {
+        return producto.category.id === categoria;
+     }
+    });
+    setProductosFiltrados(copia);
+  };
+
+
+
 
   return (
     <div className="d-flex flex-column ">
@@ -53,6 +77,13 @@ export const ItemListContainer = (props) => {
       </h2>
       <nav className="filtros ">
         <h4>Filtros: </h4>
+        <input
+          className="inputs"
+          data-filter="id"
+          onChange={handleFilter}
+          type="number"
+          placeholder="Id del producto"
+        />
         <input
           className="inputs"
           data-filter="title"
@@ -65,14 +96,14 @@ export const ItemListContainer = (props) => {
           data-filter="price"
           onChange={handleFilter}
           type="number"
-          placeholder="mayor a"
+          placeholder="Precio mayor a"
         />
         <select
           data-filter="category.name"
           onChange={handleFilter}
           className="inputs"
         >
-          <option value="todos">Todos</option>
+          <option value="todos">Categirias</option>
           <option value="Clothes">Clothes</option>
           <option value="Electronics">Electronics</option>
           <option value="Furniture">Furniture</option>
@@ -83,9 +114,11 @@ export const ItemListContainer = (props) => {
       <hr />
       <div className="content">
         {productosFiltrados.map((producto) => (
-          <Productos producto={producto} />
+          <Productos producto={producto} key={producto.id} />
         ))}
       </div>
     </div>
   );
 };
+
+export default ItemListContainer;

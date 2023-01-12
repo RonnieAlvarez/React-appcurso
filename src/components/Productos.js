@@ -28,7 +28,7 @@ export const Productos = (props) => {
   );
 
   return (
-    <div className="product mx-2 my-sm-2  ">
+    <div className="product mx-2 my-sm-2">
       <Card style={{ width: "18rem", heigth: "500px" }}>
         <Card.Img variant="top" src={images[0] ? images[0] : producto1} />
         <Card.Body>

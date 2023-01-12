@@ -74,12 +74,12 @@ body {
   overflow: auto;
   padding-left: 15px;
   color: #2c3e50 !important;
-}
+  }
 footer {
   height: 70px;
   grid-area: footer;
   width: 100vw;
-  color: black;
+  color: #add8e6!important;
   border-top: 1px solid #454545;
   text-align: end;
   line-height: 68px;
@@ -91,7 +91,9 @@ footer {
   justify-content: space-evenly;
   transition: transform 250ms;
 }
-
+.footertext{
+  color:#add8e6;
+}
 .product:hover {
   transform: translateY(-3px);
 }

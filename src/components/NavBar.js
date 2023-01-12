@@ -6,6 +6,9 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "./comp_imgs/logo-mel.svg";
 import { CartWidget } from "./CartWidget";
 
+
+
+
 export const NavBar = () => {
   return (
     <div className="Header">
