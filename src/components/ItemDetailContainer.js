@@ -1,30 +1,30 @@
 import React from "react";
 import { Productos } from "./Productos";
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-export const ItemListCat = (props) => {
+export const ItemDetailContainer = (props) => {
   const [cargo, setCargo] = useState(false);
   const [productos, setProductos] = useState([]);
-const { categoria } = useParams();
-
+  const { item } = useParams();
+console.log(item)
   useEffect(() => {
-
-    const pedido = fetch(`https://api.escuelajs.co/api/v1/categories/${categoria}/products`);
-    pedido
+      const pedido = fetch(
+        `https://api.escuelajs.co/api/v1/products/${item}`
+      );
+     pedido
       .then((response) => {
         const productos = response.json();
         return productos;
       })
       .then((productos) => {
         setProductos(productos);
-        console.log(productos);
         setCargo(true);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, [categoria]);
+  }, [item]);
 
   return (
     <div className="d-flex flex-column ">
@@ -33,13 +33,15 @@ const { categoria } = useParams();
       </h2>
       <hr />
       <div className="content">
-       {productos.map((producto) => (
-         <Productos producto={producto} key={producto.id} />
-            
+        {productos.map((producto) => (
+          <Productos producto={producto} key={producto.id} />
         ))}
+       
+       
+       
       </div>
     </div>
   );
 };
 
-export default ItemListCat;
+export default ItemDetailContainer;

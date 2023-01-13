@@ -1,12 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React from "react";
 import "../src/App.css";
-import Main from "./components/Main";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ItemListContainer from './components/ItemListContainer';
-import ItemListCat from './components/ItemListCat';
-
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 export default function App() {
   return (
@@ -14,11 +12,10 @@ export default function App() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-					<Route path='/' element={<Main />} />
-					<Route path='/main' element={<Main />} />
-					<Route exact path='/main/:categoria' element={<ItemListCat greeting="Productos"/>} />
-          {/* <Route path='/main/tienda' element={<ItemListContainer greeting="Productos"/>} /> */}
-					{/* <Route path='/producto/:id' element={<ItemDetailContainer />} /> */}
+          <Route path='/' element={<ItemListContainer greeting="Productos"/>} />
+					<Route path='/main' element={<ItemListContainer greeting="Productos"/>} />
+					<Route path='/main/:categoria' element={<ItemListContainer greeting="Productos"/>} />
+          <Route path='/maindetail/:item' element={<ItemDetailContainer greeting="Productos"/>} />
           <Route path="*" element={<p>Error 404 Archivo no encontrado...</p>}/>
         </Routes>
       
