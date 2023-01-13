@@ -7,15 +7,19 @@ export const ItemListContainer = (props) => {
   const [cargo, setCargo] = useState(false);
   const [productos, setProductos] = useState([]);
   const { categoria } = useParams();
-let resto= "products"
-if(categoria==1||categoria==2||categoria==3||categoria==4){
-     resto= `categories/${categoria}/products`
-}
+
   useEffect(() => {
-      const pedido = fetch(
-        `https://api.escuelajs.co/api/v1/${resto}`
-      );
-     pedido
+    let resto = "products";
+    if (
+      categoria === "1" ||
+      categoria === "2" ||
+      categoria === "3" ||
+      categoria === "4"
+    ) {
+      resto = `categories/${categoria}/products`;
+    }
+    const pedido = fetch(`https://api.escuelajs.co/api/v1/${resto}`);
+    pedido
       .then((response) => {
         const productos = response.json();
         return productos;
@@ -38,14 +42,10 @@ if(categoria==1||categoria==2||categoria==3||categoria==4){
       <div className="content">
         {productos.map((producto) => (
           <div key={producto.id}>
-          <Productos producto={producto} key={producto.id} />
-          <Link to={`/maindetail/${producto.id}`}>Agregar {producto.id}</Link>
+            <Productos producto={producto} key={producto.id} />
+            <Link to={`/maindetail/${producto.id}`}>Agregar {producto.id}</Link>
           </div>
         ))}
-        
-
-        
-        
       </div>
     </div>
   );
