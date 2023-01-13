@@ -1,7 +1,7 @@
 import React from "react";
 import { Productos } from "./Productos";
 import { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = (props) => {
   const [cargo, setCargo] = useState(false);
@@ -43,7 +43,7 @@ export const ItemListContainer = (props) => {
           return producto.price > Number(e.target.value);
         }
         console.log(categoria);
-        if (Number(categoria)>0){
+        if (Number(categoria) > 0) {
           return producto.category.id === Number(categoria);
         }
         if (e.target.value === "todos") {
@@ -62,16 +62,14 @@ export const ItemListContainer = (props) => {
         return producto;
       } else {
         return producto.category.id === categoria;
-     }
+      }
     });
     setProductosFiltrados(copia);
   };
 
-
-
-
   return (
     <div className="d-flex flex-column ">
+      {/* if (!categoria==""){handleCategories()} */}
       <h2 className="mb-3 d-flex align-item-start ms-3">
         {props.greeting} {!cargo ? "Cargando..." : ""}
       </h2>

@@ -21,7 +21,7 @@ export const CartWidget = () => {
               className="d-inline-block  position-relative"
               alt="Shopping Cart"
             />
-            <span className="fs-6 text-dark position-absolute top-25 start-75 translate-middle badgeColor">
+            <span className="mt-1 fs-6 text-dark position-absolute top-25 start-75 translate-middle badgeColor">
               {counter} {/*// contador de articulo en el Carrito*/}
             </span>
           </Navbar.Brand>
