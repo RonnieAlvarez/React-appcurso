@@ -7,6 +7,7 @@ export const ItemListContainer = (props) => {
   const [cargo, setCargo] = useState(false);
   const [productos, setProductos] = useState([]);
   const { categoria } = useParams();
+  const catname = ["Todas las Categorias","Ropa","Electronicos","Muebles","Zapatos"]
 
   useEffect(() => {
     let resto = "products";
@@ -27,6 +28,7 @@ export const ItemListContainer = (props) => {
       .then((productos) => {
         setProductos(productos);
         setCargo(true);
+        console.log(productos);
       })
       .catch((error) => {
         console.log(error);
@@ -34,16 +36,17 @@ export const ItemListContainer = (props) => {
   }, [categoria]);
 
   return (
+        
     <div className="d-flex flex-column ">
       <h2 className="mb-3 d-flex align-item-start ms-3">
-        {props.greeting} {!cargo ? "Cargando..." : ""}
+        {props.greeting} {!cargo ? "Cargando..." : ""} {catname[categoria]} 
       </h2>
       <hr />
       <div className="content">
         {productos.map((producto) => (
-          <div key={producto.id}>
+          <div className="d-flex flex-column justify-content-center" key={producto.id}>
             <Productos producto={producto} key={producto.id} />
-            <Link to={`/maindetail/${producto.id}`}>Agregar {producto.id}</Link>
+            <Link className="ms-2 me-2 btn btn-info btn-sm product" to={`/maindetail/${producto.id}`}>Agregar id: {producto.id}</Link>
           </div>
         ))}
       </div>

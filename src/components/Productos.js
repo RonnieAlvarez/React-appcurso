@@ -7,7 +7,8 @@ import Popover from "react-bootstrap/Popover";
 
 export const Productos = (props) => {
   const { id, title, price, images, description } = props.producto;
-  const shortDescription = description.substring(0, 30) + "...";
+  const shortDescription = description.substring(0, 30) + "..." ? description.substring(0, 30) + "..." : " " ;
+  
 
   const popover = (
     <Popover
@@ -28,19 +29,16 @@ export const Productos = (props) => {
   );
 
   return (
-    <div className="product mx-2 my-sm-2">
+    <div className="product mx-2 my-sm-2 align-items-center">
       <Card style={{ width: "18rem", heigth: "500px" }}>
         <Card.Img variant="top" src={images[0] ? images[0] : producto1} />
-        <Card.Body>
+        <Card.Body className="product">
           <Card.Title>{title}</Card.Title>
           <Card.Text>{shortDescription}</Card.Text>
           <Popollamada />
           <h4>
             Id:{id} Precio:${price}
           </h4>
-          <Button size="sm" variant="outline-dark">
-            Agregar
-          </Button>
         </Card.Body>
       </Card>
     </div>

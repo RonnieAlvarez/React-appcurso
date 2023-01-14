@@ -76,6 +76,15 @@ body {
   padding-left: 15px;
   color: #2c3e50 !important;
   }
+  .detailcontent {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding-left: 15px;
+    color: #2c3e50 !important;
+    } 
 footer {
   height: 70px;
   grid-area: footer;
@@ -89,7 +98,10 @@ footer {
   position: fixed;
 }
 .product {
-  justify-content: space-evenly;
+  display: flex!important;
+  flex-direction: column!important;
+  justify-content: center!important;
+  /* justify-content: space-evenly; */
   transition: transform 250ms;
 }
 .footertext{

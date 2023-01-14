@@ -15,10 +15,10 @@ export default function App() {
           <Route path='/' element={<ItemListContainer greeting="Productos"/>} />
 					<Route path='/main' element={<ItemListContainer greeting="Productos"/>} />
 					<Route path='/main/:categoria' element={<ItemListContainer greeting="Productos"/>} />
-          <Route path='/maindetail/:item' element={<ItemDetailContainer greeting="Productos"/>} />
+          <Route path='/maindetail' element={<ItemDetailContainer/>} />
+          <Route path='/maindetail/:item' element={<ItemDetailContainer/>} />
           <Route path="*" element={<p>Error 404 Archivo no encontrado...</p>}/>
         </Routes>
-      
       <Footer />
     </BrowserRouter>
     </div>

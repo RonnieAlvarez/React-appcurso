@@ -25,7 +25,7 @@ export const CartWidget = () => {
               {counter} {/*// contador de articulo en el Carrito*/}
             </span>
           </Navbar.Brand>
-          <button onClick={handlerClick}>+1</button>
+          <button className="btn btn-info btn-sm" onClick={handlerClick}>+1</button>
         </Container>
       </Navbar>
     </div>

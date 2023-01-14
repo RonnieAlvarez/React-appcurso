@@ -5,7 +5,7 @@ export const MainDetail = () => {
 
   return (
     <div className="App">
-    <ItemDetailContainer greeting="Productos"/>
+    <ItemDetailContainer/>
     
     </div>
   );
