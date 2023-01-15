@@ -1,0 +1,12 @@
+
+.item {
+	display: block;
+	width: 100%;
+	height: calc(100vh - 70px);
+	object-fit: scale-down;
+}
+.item img {
+	object-fit: scale-down;
+	height: calc(100vh - 70px);
+	width: 100%;
+}

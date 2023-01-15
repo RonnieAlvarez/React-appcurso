@@ -18,14 +18,14 @@ export const ItemDetailContainer = () => {
     })
     .then((productos) => {
       setProductos1(productos);
-      console.log(productos1);
+  
       })
       .catch((error) => {
         console.log(error);
       });
   }, [item]);
 
-  console.log(item);
+  
   return (
     <div className="detailcontent">
       <h2>{productos1.title}</h2>
@@ -39,7 +39,7 @@ export const ItemDetailContainer = () => {
               Id:{productos1.id} Precio: {productos1.price}
             </h4>
             <Button size="sm" variant="outline-dark">
-              Agregar
+              Agregar al Carrito
             </Button>
           </Card.Body>
         </Card>

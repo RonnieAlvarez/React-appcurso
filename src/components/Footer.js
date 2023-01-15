@@ -1,5 +1,6 @@
 import React from "react";
 import SocialFollow from "./SocialFollow";
+import Audio from "../components/Audio"
 
 export const Footer = () => {
   return (
@@ -9,9 +10,12 @@ export const Footer = () => {
           <div className="col-md-6 d-flex align-items-center">
             <SocialFollow />
           </div>
-          <span className="col-md-4  text-muted pe-3  justify-content-end ">
+          <div className="col-md-4  text-muted pe-3  justify-content-center ">
             © 2022 Company, Inc
-          </span>
+          </div>
+          <div>
+          <Audio />
+          </div>
         </footer>
       </div>
     </div>

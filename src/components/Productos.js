@@ -37,7 +37,7 @@ export const Productos = (props) => {
           <Card.Text>{shortDescription}</Card.Text>
           <Popollamada />
           <h4>
-            Id:{id} Precio:${price}
+             id: {id}   Precio: ${price}
           </h4>
         </Card.Body>
       </Card>
