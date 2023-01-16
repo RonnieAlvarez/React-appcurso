@@ -37,11 +37,11 @@ export const ItemListContainer = (props) => {
 
   return (
     <div className="d-flex flex-column ">
-      <h2 className="mb-3 d-flex align-item-start ms-3">
+      <h2 className="mb-1 d-flex align-item-start ms-3">
         {props.greeting} {!cargo ? "Cargando..." : ""}{" "}
         {catname[categoria] ? catname[categoria] : catname[0]}
       </h2>
-      <hr />
+      {/* <hr /> */}
       <div className="content">
         {productos.map((producto) => (
           <div
@@ -50,7 +50,7 @@ export const ItemListContainer = (props) => {
           >
             <Productos producto={producto} key={producto.id} />
             <Link
-              className="ms-2 me-2 btn btn-info btn-sm product"
+              className="ms-2 me-2 btn btn-info btn-sm productagregar"
               to={`/maindetail/${producto.id}`}
             >
               Agregar id: {producto.id}

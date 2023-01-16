@@ -13,7 +13,6 @@ export default function App() {
     <div>
     <BrowserRouter>
       <NavBar />
-       
       <Routes>
           <Route path='/' element={<Home />} />
 					<Route path='/main' element={<ItemListContainer greeting="Productos:" />} />

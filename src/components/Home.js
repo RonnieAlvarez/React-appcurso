@@ -11,8 +11,8 @@ function IndividualIntervalsExample() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3 >Electrónicos</h3>
-          <p >Descubre la definición de “Productos electrónicos”.</p>
+          <h3 className='thickOutlined' >Electrónicos</h3>
+          <p className='thickOutlined' >Descubre la definición de “Productos electrónicos”.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000} className="item">
@@ -22,8 +22,8 @@ function IndividualIntervalsExample() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3 >Muebles para el Hogar</h3>
-          <p >A la Vanguardia en el diseño de mobiliario para el Hogar.</p>
+          <h3  className='thickOutlined'>Muebles para el Hogar</h3>
+          <p className='thickOutlined' >A la Vanguardia en el diseño de mobiliario para el Hogar.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000} className="item">
@@ -33,8 +33,8 @@ function IndividualIntervalsExample() {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Zapatos Deportivos</h3>
-          <p>
+          <h3 className='thickOutlined'>Zapatos Deportivos</h3>
+          <p className='thickOutlined'>
           Superara tus límites con el más alto rendimiento.
           </p>
         </Carousel.Caption>
@@ -46,8 +46,8 @@ function IndividualIntervalsExample() {
      alt="First slide"
    />
    <Carousel.Caption>
-     <h3 >Ropa</h3>
-     <p >Siempre a la moda con la mejor calidad de vestimenta.</p>
+     <h3  className='thickOutlined'>Ropa</h3>
+     <p  className='thickOutlined'>Siempre a la moda con la mejor calidad de vestimenta.</p>
    </Carousel.Caption>
  </Carousel.Item>
     </Carousel>

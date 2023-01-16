@@ -7,7 +7,7 @@ import Popover from "react-bootstrap/Popover";
 
 export const Productos = (props) => {
   const { id, title, price, images, description } = props.producto;
-  const shortDescription = description.substring(0, 30) + "..." ? description.substring(0, 30) + "..." : " " ;
+  const shortDescription = description.substring(0, 20) + "..." ? description.substring(0, 20) + "..." : " " ;
   
 
   const popover = (
@@ -15,7 +15,7 @@ export const Productos = (props) => {
       id="popover-basic"
       style={{ background: "lightblue", color: "black" }}
     >
-      <Popover.Header as="h3">{title}</Popover.Header>
+      <Popover.Header as="h4">{title}</Popover.Header>
       <Popover.Body>{description}</Popover.Body>
     </Popover>
   );
@@ -29,16 +29,16 @@ export const Productos = (props) => {
   );
 
   return (
-    <div className="product mx-2 my-sm-2 align-items-center">
-      <Card style={{ width: "18rem", heigth: "500px" }}>
-        <Card.Img variant="top" src={images[0] ? images[0] : producto1} />
+    <div className="product mx-1 my-sm-1 align-items-center">
+      <Card style={{ width: "15rem", heigth: "17rem" }}>
+        <Card.Img variant="top" src={images[0] ? images[0] : producto1} style={{ width: "15rem", heigth: "8rem"}}/>
         <Card.Body className="product">
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>{shortDescription}</Card.Text>
+          <Card.Title className="h6">{title}</Card.Title>
+          <Card.Text className="fs-6">{shortDescription}</Card.Text>
           <Popollamada />
-          <h4>
+          <h6>
              id: {id}   Precio: ${price}
-          </h4>
+          </h6>
         </Card.Body>
       </Card>
     </div>
