@@ -1,3 +1,7 @@
+/**
+ * It's a function that returns a div with four links, each link has a FontAwesomeIcon inside of it.
+ * @returns A React component.
+ */
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

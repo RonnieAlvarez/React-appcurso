@@ -6,10 +6,12 @@ import Footer from "./components/Footer";
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Home from "./components/Home"
+import CustomProvider from "./context/CustomProvider"
 
 
 export default function App() {
   return (
+    <CustomProvider>
     <div>
     <BrowserRouter>
       <NavBar />
@@ -24,6 +26,7 @@ export default function App() {
       <Footer />
     </BrowserRouter>
     </div>
-  );
+    </CustomProvider>
+   );
 }
 

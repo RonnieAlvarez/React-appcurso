@@ -1,5 +1,8 @@
+/**
+ * It renders a NavBar with a logo, a title, and a few buttons.
+ * @returns A NavBar component that is being exported.
+ */
 import React from "react";
-// import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import logo from "./comp_imgs/logo-mel.svg";
 import { CartWidget } from "./CartWidget";
