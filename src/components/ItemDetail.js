@@ -7,7 +7,7 @@ const ItemDetail = (props) => {
   const { title, images, description, id, price,stock=5 } = props.producto;
 
   return (
-    <div className="detailcontent ">
+    <div className="Container mt-5 detailcontent">
       <h2>{title}</h2>
       <div className="detailproduct detailProductTam">
         <Card
@@ -31,7 +31,7 @@ const ItemDetail = (props) => {
             <Card.Title className="text-primary">{title}  + Id:{id}</Card.Title>
             <Card.Text>{description}</Card.Text>
             <span className="lh-sm m-0 fs-6 fw-light text-primary " ><strong>$ {price} </strong> Stock <strong>{stock}</strong></span>
-            <ItemCount stock={stock} />
+            <ItemCount stock={stock} producto={props.producto}/>
           </Container>
           </Card.Body>
         </Card>

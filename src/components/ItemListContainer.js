@@ -1,7 +1,7 @@
 import React from "react";
 import { Productos } from "./Productos";
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = (props) => {
   const [cargo, setCargo] = useState(false);
@@ -41,7 +41,7 @@ export const ItemListContainer = (props) => {
         {props.greeting} {!cargo ? "Cargando..." : ""}{" "}
         {catname[categoria] ? catname[categoria] : catname[0]}
       </h2>
-      {/* <hr /> */}
+   
       <div className="content">
         {productos.map((producto) => (
           <div
@@ -49,12 +49,6 @@ export const ItemListContainer = (props) => {
             key={producto.id}
           >
             <Productos producto={producto} key={producto.id} />
-            <Link
-              className="ms-2 me-2 btn btn-info btn-sm productagregar"
-              to={`/maindetail/${producto.id}`}
-            >
-              Agregar id: {producto.id}
-            </Link>
           </div>
         ))}
       </div>

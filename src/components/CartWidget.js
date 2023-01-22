@@ -7,8 +7,9 @@ import { contexto } from "../context/CustomProvider";
 
 export const CartWidget = () => {
 
-  const {acumulador} = useContext(contexto)
-console.log(acumulador)
+  const {cantLineas} = useContext(contexto)
+  
+
 
   return (
     <div>
@@ -23,7 +24,7 @@ console.log(acumulador)
               alt="Shopping Cart"
             />
             <span className="mt-1 fs-6 text-dark position-absolute top-25 start-75 translate-middle badgeColor">
-              {acumulador ? acumulador : 0} {/*// contador de articulo en el Carrito*/}
+              {cantLineas ? cantLineas : 0} {/*// contador de articulo en el Carrito*/}
             </span>
           </Navbar.Brand>
         </Container>

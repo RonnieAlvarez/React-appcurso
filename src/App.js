@@ -7,6 +7,7 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Home from "./components/Home"
 import CustomProvider from "./context/CustomProvider"
+import Carrito from './components/Carrito';
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
 					<Route path='/main/:categoria' element={<ItemListContainer greeting="Categoria:"/>} />
           <Route path='/maindetail' element={<ItemDetailContainer/>} />
           <Route path='/maindetail/:item' element={<ItemDetailContainer/>} />
+          <Route path='/carrito' element={<Carrito/>} />
           <Route path="*" element={<p>Error 404 Archivo no encontrado...</p>}/>
         </Routes>
       <Footer />

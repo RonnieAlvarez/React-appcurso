@@ -11,7 +11,6 @@ const {stock} = props
 const {agregarProducto}= useContext(contexto)
 const [contador, setContador] = useState(1);
 
-console.log(props)
   const handleSumar = () => {
     if (contador<stock){
       setContador(contador + 1)
@@ -22,7 +21,7 @@ console.log(props)
   };
  
   const handleConfirmar= () =>{
-    agregarProducto(contador) 
+    agregarProducto(contador,props.producto.id,props.producto.price,props.producto.title,props.producto.images) 
  
   }
   const handleResetear=()=>{
@@ -34,11 +33,11 @@ console.log(props)
     <div className="my-2">
     <div>
       <Button disabled={contador<=1} onClick={handleRestar} size="sm" variant="danger" className="py-0">
-      <img src={cartMenos} width="15px" />
+      <img src={cartMenos} width="15px" alt="Restar Items" />
       </Button>
       <span className="mx-2">cantidad : {contador}</span>
       <Button onClick={handleSumar} size="sm" variant="primary" className="py-0 ">
-      <img src={cartPlus} width="15px" />
+      <img src={cartPlus} width="15px" alt="Agregar Items"/>
       </Button>
       </div>
       <div>

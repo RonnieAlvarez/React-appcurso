@@ -33,7 +33,7 @@ export const NavBar = () => {
           <Link className="btn btn-outline-info btn-sm" to="/main/0">
             Todo
           </Link>
-          <Link className="btn btn-outline-warning btn-sm" to="/main/0">
+          <Link className="btn btn-outline-warning btn-sm" to="/Carrito">
             Ir al Carrito
           </Link>
 
