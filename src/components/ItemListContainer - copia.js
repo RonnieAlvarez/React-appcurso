@@ -1,5 +1,5 @@
-import { ItemList } from './ItemList';
 import React from "react";
+import { Productos } from "./Productos";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -14,8 +14,7 @@ export const ItemListContainer = (props) => {
     "Muebles",
     "Zapatos",
   ];
-  
-  
+
   useEffect(() => {
     let resto = "products";
     if (categoria > 0 && categoria < 5) {
@@ -36,14 +35,25 @@ export const ItemListContainer = (props) => {
       });
   }, [categoria]);
 
-  return (<>
+  return (
+    <div className="d-flex flex-column ">
       <h2 className="mb-1 d-flex align-item-start ms-3">
         {props.greeting} {!cargo ? "Cargando..." : ""}{" "}
         {catname[categoria] ? catname[categoria] : catname[0]}
       </h2>
-      <ItemList   cargo={cargo} productos={productos} />;
-  </>
-  )
+   
+      <div className="content">
+        {productos.map((producto) => (
+          <div
+            className="d-flex flex-column justify-content-center"
+            key={producto.id}
+          >
+            <Productos producto={producto} key={producto.id} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default ItemListContainer;

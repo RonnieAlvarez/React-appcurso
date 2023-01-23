@@ -7,7 +7,7 @@ import Popover from "react-bootstrap/Popover";
 import { Link } from "react-router-dom";
 
 
-export const Productos = (props) => {
+export const Item = (props) => {
   const { id, title, price, images, description } = props.producto;
   const shortDescription = description.substring(0, 20) + "..." ? description.substring(0, 20) + "..." : " " ;
   
@@ -54,4 +54,4 @@ export const Productos = (props) => {
   );
 };
 
-export default Productos;
+export default Item;

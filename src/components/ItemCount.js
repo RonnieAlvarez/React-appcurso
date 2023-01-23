@@ -1,14 +1,15 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import { useState,useContext } from "react";
-import { contexto } from "../context/CustomProvider";
+import { useState } from "react";
 import cartPlus from "./comp_imgs/cartplus.svg"
 import cartMenos from "./comp_imgs/cartmenos.svg"
+import { useCarrito } from "../context/CustomProvider";
 
 
 const ItemCount = (props) => {
+  console.log(props)
 const {stock} = props
-const {agregarProducto}= useContext(contexto)
+const {agregarProducto}= useCarrito()
 const [contador, setContador] = useState(1);
 
   const handleSumar = () => {
@@ -47,4 +48,4 @@ const [contador, setContador] = useState(1);
     </div>
   );
 };
-export default ItemCount;;
+export default ItemCount

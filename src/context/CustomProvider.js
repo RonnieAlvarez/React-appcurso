@@ -10,7 +10,6 @@ export const useCarrito = () => {
 
 const CarritoProvider = ({ children }) => {
   const [cantidad, setCantidad] = useState(0);
-  const [cantLineas, setCantLineas] = useState(0);
   const [cantArticulos, setCantArticulos] = useState(0);
   const [vtotal, setVtotal] = useState(0);
   const [cart, setCart] = useState([]);
@@ -29,13 +28,6 @@ const CarritoProvider = ({ children }) => {
     return;
   }, [cart]);
 
-  useEffect(() => {
-const Lineas = cart.length
-setCantLineas(Lineas)
-return
-  },[cart]);
-
-  
 /**
  * If the id of the item in the cart matches the id of the item that was clicked, then update the
  * quantity of that item in the cart.
@@ -102,13 +94,19 @@ return
     setCart([]);
   };
 
+/**
+ * If the number is truthy, return a span with the number formatted as currency. Otherwise, return
+ * null.
+ * @param number - The number to format.
+ * @returns A function that returns a span element with the number formatted as currency.
+ */
  const formatNumber = (number) => {
     return (
     (number) ? 
-        <span style={{ color: "white" }}>
-            {new Intl.NumberFormat("ES-CR", {
+        <span style={{ color: "blue" }}>
+            {new Intl.NumberFormat("ES-US", {
             style: "currency",
-            currency: "CRC"
+            currency: "USD"
             }).format(number)}
         </span>
     : null
@@ -120,7 +118,6 @@ return
     agregarProducto,
     eliminarProducto,
     vaciarCarrito,
-    cantLineas,
     vtotal,
     cantArticulos,
     formatNumber,

@@ -8,6 +8,8 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import Home from "./components/Home"
 import CustomProvider from "./context/CustomProvider"
 import Carrito from './components/Carrito';
+import UserListContainer from './components/UserListContainer';
+import UserDetailContainer from './components/UserDetailContainer';
 
 
 export default function App() {
@@ -23,6 +25,8 @@ export default function App() {
           <Route path='/maindetail' element={<ItemDetailContainer/>} />
           <Route path='/maindetail/:item' element={<ItemDetailContainer/>} />
           <Route path='/carrito' element={<Carrito/>} />
+          <Route path='/userDet' element={<UserListContainer/>} />
+          <Route path='/userDet/:user' element={<UserDetailContainer/>} />
           <Route path="*" element={<p>Error 404 Archivo no encontrado...</p>}/>
         </Routes>
       <Footer />

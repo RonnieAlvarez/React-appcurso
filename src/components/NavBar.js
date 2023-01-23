@@ -34,7 +34,10 @@ export const NavBar = () => {
             Todo
           </Link>
           <Link className="btn btn-outline-warning btn-sm" to="/Carrito">
-            Ir al Carrito
+            Carrito
+          </Link>
+          <Link className="btn btn-outline-warning btn-sm" to="/UserDet">
+            Usuarios
           </Link>
 
           <CartWidget />

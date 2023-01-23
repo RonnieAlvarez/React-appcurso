@@ -7,7 +7,7 @@ import { contexto } from "../context/CustomProvider";
 
 export const CartWidget = () => {
 
-  const {cantLineas} = useContext(contexto)
+  const {cantArticulos} = useContext(contexto)
   
 
 
@@ -24,7 +24,7 @@ export const CartWidget = () => {
               alt="Shopping Cart"
             />
             <span className="mt-1 fs-6 text-dark position-absolute top-25 start-75 translate-middle badgeColor">
-              {cantLineas ? cantLineas : 0} {/*// contador de articulo en el Carrito*/}
+              {cantArticulos ? cantArticulos : 0} {/*// contador de articulo en el Carrito*/}
             </span>
           </Navbar.Brand>
         </Container>

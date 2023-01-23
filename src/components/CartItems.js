@@ -1,9 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { contexto } from "../context/CustomProvider";
+import { useContext } from "react";
 
 export const CartItems = (props) => {
-  console.log(props.vtotal);
-  return (
+    const {formatNumber}= useContext(contexto)
+
+    return (
     <div className="container">
       <div className="Row w-100 d-flex flex-row  align-items-center justify-content-around">
         <span className="Col img-item">
@@ -23,10 +26,10 @@ export const CartItems = (props) => {
           <span>{props.item.titulo} </span>
         </span>
         <span className="Col">
-          <span> $ {props.item.precio} </span>
+          <span>{formatNumber(props.item.precio)} </span>
         </span>
         <span className="Col">
-          <span> $ {props.item.cantidad * props.item.precio} </span>
+          <span>{formatNumber(props.item.cantidad * props.item.precio)} </span>
         </span>
       </div>
     </div>
