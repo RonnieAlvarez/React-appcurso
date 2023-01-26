@@ -2,6 +2,8 @@ import ItemCount from "./ItemCount";
 import React from "react";
 import Card from "react-bootstrap/Card";
 import  Container  from 'react-bootstrap/Container';
+import { db } from './../firebase';
+
 
 const ItemDetail = (props) => {
   const { title, images, description, id, price,stock=5 } = props.producto;

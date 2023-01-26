@@ -3,15 +3,18 @@ import { useContext } from "react";
 import { contexto } from "../context/CustomProvider";
 import { CartItems } from "./CartItems";
 import trash from "./comp_imgs/trash.svg";
+import { db } from './../firebase';
+
 
 export const Carrito = () => {
   const { cart,vtotal,cantArticulos,vaciarCarrito,formatNumber } = useContext(contexto);
   
   return (
 
+<div className="d-flex flex-column justify-content-center align-items-center" >
 
-    <div className="content d-flex flex-row justify-content-center align-items-center" >
     <h2>Carrito de compras</h2>
+    <div className="content d-flex flex-row justify-content-center align-items-center" >
      
       {cart.map((item,i) => (
        <div className="cart-item" key={i} >
@@ -26,6 +29,7 @@ export const Carrito = () => {
         </button>
       </div>
     </div>
+</div>
   );
 };
 

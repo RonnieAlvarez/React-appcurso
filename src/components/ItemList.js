@@ -3,7 +3,8 @@ import { Item } from "./Item";
 
 
 export function ItemList({productos}) {
-           
+  
+  console.log(productos)        
   return <div className="d-flex flex-column ">
    
       <div className="content">
