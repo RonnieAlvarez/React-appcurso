@@ -3,12 +3,12 @@ import { useContext } from "react";
 import { contexto } from "../context/CustomProvider";
 import { CartItems } from "./CartItems";
 import trash from "./comp_imgs/trash.svg";
-import { db } from './../firebase';
+//import { db } from './../firebase';
 
 
 export const Carrito = () => {
   const { cart,vtotal,cantArticulos,vaciarCarrito,formatNumber } = useContext(contexto);
-  
+  console.log(cart)
   return (
 
 <div className="d-flex flex-column justify-content-center align-items-center" >

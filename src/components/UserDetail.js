@@ -7,7 +7,7 @@ const UserDetail = (props) => {
   const { id, name, email, avatar } = props.user;
   return (
     <div className="Container mt-5 detailcontent">
-    <h2>{role}</h2>
+    
     <div className="detailproduct detailProductTam">
         <Card
           className="detailproduct d-flex flex-row    detailProductTam  align-items-center"

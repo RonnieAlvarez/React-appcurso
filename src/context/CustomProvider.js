@@ -13,6 +13,8 @@ const CarritoProvider = ({ children }) => {
   const [cantArticulos, setCantArticulos] = useState(0);
   const [vtotal, setVtotal] = useState(0);
   const [cart, setCart] = useState([]);
+  
+  
 
 /* Saving the cart in the local storage. */
   useEffect(() => {
@@ -25,6 +27,7 @@ const CarritoProvider = ({ children }) => {
     localStorage.setItem("cart", JSON.stringify(cart));
     setVtotal(cart.reduce((prev, next) => {return prev + next.cantidad * next.precio}, 0));
     setCantArticulos(cart.reduce((prev, next) => {return prev + next.cantidad}, 0));
+    
     return;
   }, [cart]);
 
@@ -40,6 +43,7 @@ const CarritoProvider = ({ children }) => {
         return {
           ...cart,
           cantidad: cantidad + newCantidad,
+          
         };
       }
       return cart;
@@ -65,9 +69,10 @@ const CarritoProvider = ({ children }) => {
  * @returns undefined.
  */
   const agregarProducto = (newCantidad, newItem,price,title,images) => {
+console.log(newItem)    
     if (!hbuscar(newItem)) {
       //Si no esta el Item en el carrito lo agrega
-      setCart([...cart, { id: newItem, cantidad: newCantidad, precio:price, titulo:title, img:images[0] }]);
+      setCart([...cart, { id: newItem, cantidad: newCantidad, precio:price, titulo:title, img:images,stock:vstock }]);
     } else {
       setCantidad(cantidad + newCantidad);
       buscarIdActualiza(newItem, newCantidad);
@@ -121,6 +126,7 @@ const CarritoProvider = ({ children }) => {
     vtotal,
     cantArticulos,
     formatNumber,
+    
   };
 
   return <Provider value={valorDelContexto}>{children}</Provider>;

@@ -17,7 +17,7 @@ export const CartItems = (props) => {
           />
         </span>
         <span className="Col">
-          <span>Id:{props.item.id} </span>
+          <span>Id:{' '}{props.item.id.substring(0,5)} </span>
         </span>
         <span className="Col">
           <span>{props.item.cantidad} </span>

@@ -2,12 +2,12 @@ import ItemCount from "./ItemCount";
 import React from "react";
 import Card from "react-bootstrap/Card";
 import  Container  from 'react-bootstrap/Container';
-import { db } from './../firebase';
+
 
 
 const ItemDetail = (props) => {
-  const { title, images, description, id, price,stock=5 } = props.producto;
-
+  const { title, images, description, price,stock } = props.producto;
+  console.log(props)
   return (
     <div className="Container mt-5 detailcontent">
       <h2>{title}</h2>
@@ -19,7 +19,7 @@ const ItemDetail = (props) => {
           <Card.Img
             variant="top"
             style={{ width: "18rem", heigth: "18rem" }}
-            src={images ? images : " "}
+            src={images ? images : "https://api.lorem.space/image/fashion?w=640&h=480&r=2861"}
           />
           <Card.Body
             style={{
@@ -30,10 +30,10 @@ const ItemDetail = (props) => {
             }}
           >
           <Container className="d-flex flex-column align-items-center p-1">
-            <Card.Title className="text-primary">{title}  + Id:{id}</Card.Title>
+            <Card.Title className="text-primary">{title}</Card.Title>
             <Card.Text>{description}</Card.Text>
             <span className="lh-sm m-0 fs-6 fw-light text-primary " ><strong>$ {price} </strong> Stock <strong>{stock}</strong></span>
-            <ItemCount stock={stock} producto={props.producto}/>
+            <ItemCount producto={props.producto}/>
           </Container>
           </Card.Body>
         </Card>
