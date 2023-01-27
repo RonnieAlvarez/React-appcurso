@@ -9,25 +9,14 @@ import UserDetail from "./UserDetail";
 export const UserDetailContainer = () => {
   const [usuarios1, setUsuarios1] = useState([]);
   const { user } = useParams();
-  
+  const getUserById = async (id) => {
+  const user1 = await getDoc(doc(db, "users", id));
+  setUsuarios1({ ...user1.data(), id: user });
+  };
+
   useEffect(() => {
-    let resto = "";
-    if (user>=0) {
-      resto = `${user}`;
-    }
-    const pedido = fetch(`https://api.escuelajs.co/api/v1/users/${resto}`);
-    pedido
-    .then((response) => {
-      const usuarios = response.json();
-      return usuarios;
-    })
-    .then((usuarios) => {
-      setUsuarios1(usuarios);
-  
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    getUserById(user);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   

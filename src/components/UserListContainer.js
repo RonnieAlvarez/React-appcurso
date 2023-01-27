@@ -2,29 +2,30 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Usuarios } from "./Usuarios";
 import { db } from "./../firebase";
-import { collection, doc, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 export const UserListContainer = () => {
   const [cargo, setCargo] = useState(false);
   const [usuarios, setUsuarios] = useState([]);
 
+  const productsCollection = collection(db, "users");
+
+  /**
+   * GetProducts() is an async function that gets all the products from the database and then filters
+   * them by category.
+   */
+  const getUsers = async () => {
+    let data = await getDocs(productsCollection);
+    setUsuarios(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    setCargo(true);
+  };
+
   useEffect(() => {
-    const pedido = fetch(`https://api.escuelajs.co/api/v1/users`);
-    pedido
-      .then((response) => {
-        const usuarios = response.json();
-        return usuarios;
-      })
-      .then((usuarios) => {
-        setUsuarios(usuarios);
-        setCargo(true);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    getUsers();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(usuarios);
+  //console.log(usuarios);
   return (
     <div className="d-flex flex-column ">
       <h2 className="mb-1 d-flex align-item-start ms-3">

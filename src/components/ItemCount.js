@@ -4,15 +4,17 @@ import { useState } from "react";
 import cartPlus from "./comp_imgs/cartplus.svg"
 import cartMenos from "./comp_imgs/cartmenos.svg"
 import { useCarrito } from "../context/CustomProvider";
+import { useNavigate } from "react-router-dom";
 
 
 const ItemCount = (props) => {
 const {agregarProducto}= useCarrito()
 const [contador, setContador] = useState(1);
+const navigate= useNavigate()
 
   const handleSumar = () => {
     if (contador<props.producto.stock){
-      
+
       setContador(contador + 1)
     }
   };
@@ -43,6 +45,9 @@ const [contador, setContador] = useState(1);
       <div>
     <Button onClick={handleResetear}  size="sm" variant="warning" className="me-1 py-0">Resetear</Button>
       <Button onClick={handleConfirmar} size="sm" variant="success" className="ms-1 py-0">Confirmar</Button>
+      </div>
+      <div className="d-flex w-100  justify-content-center ">
+      <button className="mt-1 py-0 btn btn-outline-secondary btn-sm " onClick={() => navigate(-1)}>go back</button>
       </div>
     </div>
   );

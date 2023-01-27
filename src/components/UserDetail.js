@@ -2,9 +2,13 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import  Container  from 'react-bootstrap/Container';
+import { useNavigate } from "react-router-dom";
 
 const UserDetail = (props) => {
-  const { id, name, email, avatar } = props.user;
+  const { name, email, avatar } = props.user;
+  const navigate= useNavigate()
+  
+
   return (
     <div className="Container mt-5 detailcontent">
     
@@ -27,10 +31,11 @@ const UserDetail = (props) => {
             }}
           >
           <Container className="d-flex flex-column align-items-center p-1">
-            <Card.Title className="text-primary">Id:{id}</Card.Title>
-            <Card.Text>{name}</Card.Text>
+            <Card.Title className="text-primary">{name}</Card.Title>
+            
             <Card.Text>{email}</Card.Text>
           </Container>
+          <button className=" btn btn-outline-secondary btn-sm" onClick={() => navigate(-1)}>go back</button>
           </Card.Body>
         </Card>
       </div>

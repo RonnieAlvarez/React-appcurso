@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 
 export const Usuarios = (props) => {
-  const { id, name, avatar, role,email } = props.user;
-  
+  const { id, name, avatar,email } = props.user;
+  console.log(props)
 
   return (
     <div className="product mx-1 my-sm-1 align-items-center">
       <Card className="Container align-items-center m-0 p-0" style={{ width: "15rem", heigth: "17rem" }}>
         <Card.Img className="m-0 p-0" variant="top" src={avatar ? avatar : producto1} style={{ width: "15rem", heigth: "8rem"}}/>
         <Card.Body className="product">
-          <Card.Title className="h6">{role}  (#{id}) </Card.Title>
+          <Card.Title className="h6"> Id:{' '}{id.substring(0,5)} </Card.Title>
           <Card.Text className="fs-6">
            Nombre: {name}
           Email: {email}
@@ -22,7 +22,7 @@ export const Usuarios = (props) => {
               className="ms-2 me-2 btn btn-info btn-sm"
               to={`/userdet/${id}`}
             >
-              ver: {id}
+              ver: {id.substring(0,5)}
             </Link>
 
         </Card.Body>
