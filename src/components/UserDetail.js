@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import  Container  from 'react-bootstrap/Container';
 
 const UserDetail = (props) => {
-  const { id, name, email, avatar,role } = props.user;
+  const { id, name, email, avatar } = props.user;
   return (
     <div className="Container mt-5 detailcontent">
     <h2>{role}</h2>
@@ -27,7 +27,7 @@ const UserDetail = (props) => {
             }}
           >
           <Container className="d-flex flex-column align-items-center p-1">
-            <Card.Title className="text-primary">{role}  + Id:{id}</Card.Title>
+            <Card.Title className="text-primary">Id:{id}</Card.Title>
             <Card.Text>{name}</Card.Text>
             <Card.Text>{email}</Card.Text>
           </Container>

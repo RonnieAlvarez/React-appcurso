@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Usuarios } from "./Usuarios";
+import { db } from "./../firebase";
+import { collection, doc, getDocs, query, where } from "firebase/firestore";
 
 export const UserListContainer = () => {
   const [cargo, setCargo] = useState(false);

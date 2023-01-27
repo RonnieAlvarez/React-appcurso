@@ -7,13 +7,12 @@ import { useCarrito } from "../context/CustomProvider";
 
 
 const ItemCount = (props) => {
-  console.log(props)
-const {stock} = props
 const {agregarProducto}= useCarrito()
 const [contador, setContador] = useState(1);
 
   const handleSumar = () => {
-    if (contador<stock){
+    if (contador<props.producto.stock){
+      
       setContador(contador + 1)
     }
   };

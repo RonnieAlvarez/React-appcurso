@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-
+import { db } from "./../firebase";
+import { getDoc, doc } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import UserDetail from "./UserDetail";
 
