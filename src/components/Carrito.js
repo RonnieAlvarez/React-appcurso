@@ -6,11 +6,16 @@ import trash from "./comp_imgs/trash.svg";
 import { useAuthValue } from "../AuthContext";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
+import { Link } from 'react-router-dom';
+
+
 
 export const Carrito = () => {
   const { cart, vtotal, cantArticulos, vaciarCarrito, formatNumber } =
     useContext(contexto);
   const { currentUser } = useAuthValue();
+ 
+
   return (
     <div className="d-flex flex-column justify-content-center align-items-center">
       <h2>Carrito de compras: </h2>{" "}
@@ -34,12 +39,17 @@ export const Carrito = () => {
             Cantidad Articulos:{"\u00A0"} {cantArticulos} {"\u00A0"}
             {"\u00A0"} Total de la Compra: {"\u00A0"} {formatNumber(vtotal)}
           </span>
+
+          <Link className="btn btn-warning " to="/checkout">
+            Checkout
+          </Link>
+
           <button
-            className="pt-0 btn btn-outline-secondary  "
+            className="py-0  btn btn-outline-danger "
             onClick={() => vaciarCarrito()}
           >
             {" "}
-            Vaciar <img src={trash} width="15px" alt="limpiar carrito" />
+            Vaciar <img src={trash} width="12px" alt="limpiar carrito" />
           </button>
         </div>
       </div>
