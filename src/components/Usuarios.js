@@ -1,13 +1,11 @@
-import Card from "react-bootstrap/Card";
-import "bootstrap/dist/css/bootstrap.css";
-import producto1 from "./comp_imgs/imgProduct.png";
-import { Link } from "react-router-dom";
+import Card from "react-bootstrap/Card"
+import "bootstrap/dist/css/bootstrap.css"
+import producto1 from "./comp_imgs/imgProduct.png"
+import { Link } from "react-router-dom"
 
 
 export const Usuarios = (props) => {
-  const { id, name, avatar,email } = props.user;
-  console.log(props)
-
+  const { id, name, avatar,email } = props.user
   return (
     <div className="product mx-1 my-sm-1 align-items-center">
       <Card className="Container align-items-center m-0 p-0" style={{ width: "15rem", heigth: "17rem" }}>
@@ -15,7 +13,9 @@ export const Usuarios = (props) => {
         <Card.Body className="product">
           <Card.Title className="h6"> Id:{' '}{id.substring(0,5)} </Card.Title>
           <Card.Text className="fs-6">
+          <p className="p-0">
            Nombre: {name}
+          </p>
           Email: {email}
           </Card.Text>
           <Link
@@ -24,11 +24,10 @@ export const Usuarios = (props) => {
             >
               ver: {id.substring(0,5)}
             </Link>
-
         </Card.Body>
       </Card>
     </div>
-  );
-};
+  )
+}
 
-export default Usuarios;
+export default Usuarios

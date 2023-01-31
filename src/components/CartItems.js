@@ -1,7 +1,7 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { contexto } from "../context/CustomProvider";
-import { useContext } from "react";
+import React from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
+import { contexto } from "../context/CustomProvider"
+import { useContext } from "react"
 
 export const CartItems = (props) => {
     const {formatNumber}= useContext(contexto)
@@ -33,5 +33,5 @@ export const CartItems = (props) => {
         </span>
       </div>
     </div>
-  );
-};
+  )
+}

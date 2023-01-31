@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+![](C:\Descargas\temp\app-imgs\1-home.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Si estás buscando una gran selección de prendas de vestir, calzado y accesorios para completar tu guardarropa, entonces echa un vistazo a la página web de MEL On-line Store. Esta empresa cuenta con excelentes precios y ofrece productos para hombres y mujeres. El sitio web ofrece una amplia gama de artículos que van desde camisetas hasta chaquetas y pantalones, además de sus últimas tendencias en calzado tanto masculinos como femeninos. Tambien tiene su departamento de electrónicos y mubles para el hogar. Además, los compradores pueden disfrutar de descuentos y promociones exclusivas realizadas por la compañía. Las formas de pago son seguras y fáciles; hay envío gratuito a cualquier parte del mundo u opciones rápidas si el pedido es urgente. Así que si quieres aprovechar todas nuestras ventajas y calidad en nuestros productos, estás a un click de lograrlo, anda que esperas registrate en  http://www.react.tvrac.net/
 
-## Available Scripts
+![](C:\Descargas\New%20Project.gif)
 
-In the project directory, you can run:
+Este proyecto fue realizado con las siguientes librerias y dependencias.
 
-### `npm start`
+@fortawesome 6.2.1 , bootstrap: 5.2.3,  firebase: 9.16.0,  react: 18.2.0,  react-bootstrap: 2.7.0,
+react-dom: 18.2.0,  react-router-dom: 6.8.0,  react-scripts: 5.0.1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El Proyecto simula una tienda de comercio en linea que tiene 4 categorias de articulos para la venta, las cuales se muestran en el menu principal ademas de la opcion de todas los articulos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ademas tiene un listado de los vendedores autorizados, con los que se podrian poner en contacto, tambien tiene el area del Carrito donde se listan los productos seleccionados para la compra, donde le aparecerá el  monto total de esa compra.

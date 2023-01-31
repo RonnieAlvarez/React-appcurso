@@ -1,13 +1,10 @@
-import ItemCount from "./ItemCount";
-import React from "react";
-import Card from "react-bootstrap/Card";
-import  Container  from 'react-bootstrap/Container';
-
-
+import ItemCount from "./ItemCount"
+import React from "react"
+import Card from "react-bootstrap/Card"
+import Container from "react-bootstrap/Container"
 
 const ItemDetail = (props) => {
-  const { title, images, description, price,stock } = props.producto;
-  console.log(props)
+  const { title, images, description, price, stock } = props.producto
   return (
     <div className="Container mt-5 detailcontent">
       <h2>{title}</h2>
@@ -19,7 +16,11 @@ const ItemDetail = (props) => {
           <Card.Img
             variant="top"
             style={{ width: "18rem", heigth: "18rem" }}
-            src={images ? images : "https://api.lorem.space/image/fashion?w=640&h=480&r=2861"}
+            src={
+              images
+                ? images
+                : "https://api.lorem.space/image/fashion?w=640&h=480&r=2861"
+            }
           />
           <Card.Body
             style={{
@@ -29,17 +30,19 @@ const ItemDetail = (props) => {
               heigth: "18rem",
             }}
           >
-          <Container className="d-flex flex-column align-items-center p-1">
-            <Card.Title className="text-primary">{title}</Card.Title>
-            <Card.Text>{description}</Card.Text>
-            <span className="lh-sm m-0 fs-6 fw-light text-primary " ><strong>$ {price} </strong> Stock <strong>{stock}</strong></span>
-            <ItemCount producto={props.producto}/>
-          </Container>
+            <Container className="d-flex flex-column align-items-center p-1">
+              <Card.Title className="text-primary">{title}</Card.Title>
+              <Card.Text>{description}</Card.Text>
+              <span className="lh-sm m-0 fs-6 fw-light text-primary ">
+                <strong>$ {price} </strong> Stock <strong>{stock}</strong>
+              </span>
+              <ItemCount producto={props.producto} />
+            </Container>
           </Card.Body>
         </Card>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ItemDetail;
+export default ItemDetail

@@ -1,5 +1,12 @@
-import React from "react";
-import SocialFollow from "./SocialFollow";
+/**
+ * The Footer component is a child of the App component. It is a functional component that returns a
+ * div with a footer class. The footer class contains two divs, one with a class of col-md-6 and the
+ * other with a class of col-md-4. The first div contains the SocialFollow component. The second div
+ * contains the text "© 2022 Company, Inc".
+ * @returns A React component.
+ */
+import React from "react"
+import SocialFollow from "./SocialFollow"
 
 export const Footer = () => {
   return (
@@ -15,7 +22,7 @@ export const Footer = () => {
         </footer>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

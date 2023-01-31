@@ -2,14 +2,14 @@
  * It's a function that returns a div with four links, each link has a FontAwesomeIcon inside of it.
  * @returns A React component.
  */
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
     faYoutube,
     faFacebook,
     faTwitter,
     faInstagram
-  } from "@fortawesome/free-brands-svg-icons";
+  } from "@fortawesome/free-brands-svg-icons"
 
 
 export default function SocialFollow() {
@@ -32,6 +32,6 @@ export default function SocialFollow() {
       </a>
 
 </div>
-  );
+  )
 }
 
