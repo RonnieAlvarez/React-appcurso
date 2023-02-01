@@ -1,8 +1,8 @@
-![](C:\React\appcurso\src\md_Images\1-home.png)
+![](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/1-home.png)
 
 Si estás buscando una gran selección de prendas de vestir, calzado y accesorios para completar tu guardarropa, entonces echa un vistazo a la página web de MEL On-line Store. Esta empresa cuenta con excelentes precios y ofrece productos para hombres y mujeres. El sitio web ofrece una amplia gama de artículos que van desde camisetas hasta chaquetas y pantalones, además de sus últimas tendencias en calzado tanto masculinos como femeninos. Tambien tiene su departamento de electrónicos y mubles para el hogar. Además, los compradores pueden disfrutar de descuentos y promociones exclusivas realizadas por la compañía. Las formas de pago son seguras y fáciles; hay envío gratuito a cualquier parte del mundo u opciones rápidas si el pedido es urgente. Así que si quieres aprovechar todas nuestras ventajas y calidad en nuestros productos, estás a un click de lograrlo, anda que esperas registrate en  http://www.react.tvrac.net/
 
-![](C:\React\appcurso\src\md_Images\New%20Project.gif)
+![](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/New%20Project.gif)
 
 Este proyecto fue realizado con las siguientes librerias y dependencias.
 
