@@ -1,5 +1,6 @@
 import { createContext, useState, useContext, useEffect } from "react";
 
+
 export const contexto = createContext();
 const { Provider } = contexto;
 
@@ -87,6 +88,13 @@ const CarritoProvider = ({ children }) => {
     setCart(newCart);
   };
 
+  
+  const tempo = () => {
+    setTimeout(() => {
+      
+    }, 2000);
+  };
+
 /**
  * Const vaciarProducto = () => {
  *     setCart([]);
@@ -123,6 +131,7 @@ const CarritoProvider = ({ children }) => {
     vtotal,
     cantArticulos,
     formatNumber,
+    tempo
   };
 
   return <Provider value={valorDelContexto}>{children}</Provider>;

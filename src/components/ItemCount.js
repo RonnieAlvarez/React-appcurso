@@ -6,6 +6,8 @@ import cartMenos from "./comp_imgs/cartmenos.svg"
 import { useCarrito } from "../context/CustomProvider"
 import { useNavigate } from "react-router-dom"
 import { useAuthValue } from "../AuthContext"
+import { Notify } from 'notiflix';
+import {FaBackward} from 'react-icons/fa'
 
 const ItemCount = (props) => {
   const { agregarProducto } = useCarrito()
@@ -28,8 +30,10 @@ const ItemCount = (props) => {
       props.producto.id,
       props.producto.price,
       props.producto.title,
-      props.producto.images
+      props.producto.images,
+      props.stock-contador,
     )
+    Notify.success("Articulo Agregado")
   }
   const handleResetear = () => {
     setContador(0)
@@ -37,11 +41,12 @@ const ItemCount = (props) => {
   const ButtonStyle = {
     borderRadius: "4px",
     color: "blue",
-    padding: "0.7rem",
+    padding: "0.4rem",
     margin: "0.5rem",
   }
 
   return (
+    <>
     <div className="my-2">
       <div>
         <Button
@@ -49,7 +54,7 @@ const ItemCount = (props) => {
           onClick={handleRestar}
           size="sm"
           variant="danger"
-          className="py-0"
+          className="py-0 mb-1"
         >
           <img src={cartMenos} width="15px" alt="Restar Items" />
         </Button>
@@ -58,7 +63,7 @@ const ItemCount = (props) => {
           onClick={handleSumar}
           size="sm"
           variant="primary"
-          className="py-0 "
+          className="py-0 mb-1"
         >
           <img src={cartPlus} width="15px" alt="Agregar Items" />
         </Button>
@@ -81,19 +86,24 @@ const ItemCount = (props) => {
           Confirmar
         </Button>
       </div>
+    </div>
+      <div className="container">
+       Usuario: {currentUser?.emailVerified ? currentUser?.email : "Usuario no Registrado"}
+      </div>
       <div className="d-flex w-100  justify-content-center ">
         <button
-          className="mt-1 py-0 btn btn-outline-secondary btn-sm "
-          style={ButtonStyle}
+          className="mt-1 py-0 btn btn-outline-secondary btn-sm"
+           
           onClick={() => navigate(-1)}
+          style={ButtonStyle}
         >
-          go back
+        
+         Regresar{' '}
+        <FaBackward/>
         </button>
       </div>
-      <div>
-        {currentUser?.emailVerified ? currentUser?.email : "Usuario no Registrado"}
-      </div>
-    </div>
+
+    </>
   )
 }
 export default ItemCount

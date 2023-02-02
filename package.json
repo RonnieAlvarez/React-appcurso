@@ -8,11 +8,15 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bootstrap": "^5.2.3",
     "firebase": "^9.16.0",
+    "notiflix": "^3.2.6",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "sweetalert2": "^11.7.1",
+    "sweetalert2-react-content": "^5.0.7"
   },
   "homepage": "http://react.tvrac.net/",
   "scripts": {
