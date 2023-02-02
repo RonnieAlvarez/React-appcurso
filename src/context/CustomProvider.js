@@ -14,6 +14,8 @@ const CarritoProvider = ({ children }) => {
   const [cantArticulos, setCantArticulos] = useState(0);
   const [vtotal, setVtotal] = useState(0);
   const [cart, setCart] = useState([]);
+  const [check,setCheck]=useState(false)
+  const [idorder,setIdorder]=useState('')
 
 /* Saving the cart in the local storage. */
   useEffect(() => {
@@ -95,6 +97,12 @@ const CarritoProvider = ({ children }) => {
     }, 2000);
   };
 
+const checklisto=(chk)=>{
+  setCheck(chk)
+}
+const idorderlisto=(id)=>{
+  setIdorder(id)
+}
 /**
  * Const vaciarProducto = () => {
  *     setCart([]);
@@ -102,6 +110,8 @@ const CarritoProvider = ({ children }) => {
  */
   const vaciarCarrito = () => {
     setCart([]);
+    setIdorder('');
+    checklisto(false);
   };
 
 /**
@@ -131,7 +141,11 @@ const CarritoProvider = ({ children }) => {
     vtotal,
     cantArticulos,
     formatNumber,
-    tempo
+    tempo,
+    check,
+    checklisto,
+    idorder,
+    idorderlisto
   };
 
   return <Provider value={valorDelContexto}>{children}</Provider>;

@@ -21,6 +21,7 @@ export const Carrito = () => {
   const { currentUser } = useAuthValue();
   const navigate = useNavigate();
   const MySwal = withReactContent(Swal);
+  
   const confirmDelete = () => {
     MySwal.fire({
       title: "Desea Vaciar el Carrito?",
