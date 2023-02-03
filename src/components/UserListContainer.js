@@ -27,7 +27,7 @@ export const UserListContainer = () => {
   return (
     <div className="d-flex flex-column ">
       <h2 className="mb-1 d-flex align-item-start ms-3">
-        {!cargo ? "Cargando..." : ""} Usuarios
+        {!cargo ? "Cargando..." : ""} Vendedores
       </h2>
       <div className="content">
         {usuarios.map((usuario) => (

@@ -148,7 +148,7 @@ footer {
 .cart-item{
   display: flex;
   width: 80vw;
-  height: 10vh;
+  /* height: 10vh; */
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -179,7 +179,6 @@ footer {
   height: 100%;
   object-fit: contain;
 }
-
 
 @media (max-width: 600px) {
   .content {

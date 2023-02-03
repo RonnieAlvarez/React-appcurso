@@ -11,17 +11,20 @@ import { Notify } from "notiflix";
 import { FaBackward, FaTrash } from "react-icons/fa";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+
 // import { Confirm } from 'notiflix';
+
+
 
 // import { Confirm } from 'notiflix/build/notiflix-confirm-aio';
 
 export const Carrito = () => {
-  const { cart, vtotal, cantArticulos, vaciarCarrito, formatNumber,tempo } =
+  const { cart, vtotal, cantArticulos, vaciarCarrito, formatNumber, tempo } =
     useContext(contexto);
   const { currentUser } = useAuthValue();
   const navigate = useNavigate();
   const MySwal = withReactContent(Swal);
-  
+
   const confirmDelete = () => {
     MySwal.fire({
       title: "Desea Vaciar el Carrito?",
@@ -48,9 +51,7 @@ export const Carrito = () => {
     }
   };
 
-
   retorno();
-
 
   return (
     <div className="d-flex flex-column justify-content-center align-items-center">
@@ -64,41 +65,45 @@ export const Carrito = () => {
           Sign Out
         </button>
       </span>
-      <div className="content d-flex flex-row justify-content-center align-items-center">
+      <div className="row m-3 w-75  d-flex flex-row justify-content-center align-items-center">
         {cart.map((item, i) => (
           <div className="cart-item" key={i}>
             <CartItems item={item} />
           </div>
         ))}
-        <div className="cart-item Row w-750 d-flex flex-row  align-items-center justify-content-around">
-          <span className="Col text-dark img-item">
-            Cantidad Articulos:{"\u00A0"} {cantArticulos} {"\u00A0"}
-            {"\u00A0"} Total de la Compra: {"\u00A0"} {formatNumber(vtotal)}
-          </span>
 
-          <Link
-            className={`btn btn-warning ${
-              cantArticulos === 0 ? "disabled" : ""
-            } `}
-            to="/checkout"
-          >
-            Checkout
-          </Link>
-          <button
-            className="py-0 btn btn-outline-secondary btn-sm"
-            onClick={() => navigate(-1)}
-          >
-            Regresar <FaBackward />
-          </button>
+        <div className="cart-item  Row mt-2 d-flex flex-row  align-items-center justify-content-around">
+          <div className="d-flex flex-column ">
+            <div className="Col text-dark img-item">
+              Cantidad Articulos:{"\u00A0"} {cantArticulos} {"\u00A0"}
+              {"\u00A0"} Total de la Compra: {"\u00A0"} {formatNumber(vtotal)}
+            </div>
+            <div className="d-flex flex-row mb-2 justify-content-around">
+              <Link
+                className={`btn btn-warning ${
+                  cantArticulos === 0 ? "disabled" : ""
+                } `}
+                to="/checkout"
+              >
+                Checkout
+              </Link>
+              <button
+                className="py-0 btn btn-outline-secondary btn-sm"
+                onClick={() => navigate(-1)}
+              >
+                Regresar <FaBackward />
+              </button>
 
-          <button
-            className={` btn btn-outline-danger ${
-              cantArticulos === 0 ? "disabled" : ""
-            } `}
-            onClick={() =>confirmDelete()}
-          >
-            Vaciar <FaTrash />
-          </button>
+              <button
+                className={` btn btn-outline-danger ${
+                  cantArticulos === 0 ? "disabled" : ""
+                } `}
+                onClick={() => confirmDelete()}
+              >
+                Vaciar <FaTrash />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
