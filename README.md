@@ -3,8 +3,11 @@
   <img src="https://readme-typing-svg.demolab.com/?lines=Proyecto+Final+Curso+Reactjs;Carrera+Full+Stack+CODERHOUSE!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">
 </p>
   <p align="center">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Mel+On+Line+Store!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">(http://react.tvrac.net)
-  </p>
+    <img src="https://readme-typing-svg.demolab.com/?lines=Mel+On+Line+Store!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">
+   </p>
+   (http://react.tvrac.net)
+   
+  
    <a href="http://www.react.tvrac.net" alt="pagina web" title="Mel On-Line Store">
   </a>
 [Mel On-line Store](http://react.tvrac.net)
@@ -38,5 +41,5 @@ Aqui puede descargar un archivo Pdf con la Descripción del proyecto
 </div>
 
 <div align="center">
- <img src="https://raw.githubusercontent.com/RonnieAlvarez/React-appcurso/main/src/components/comp_imgs/logo-mel.svg"></a> 
+ <img src="http://www.react.tvrac.net/static/media/logo-mel.f8c8f1afd89e18736b4adcd20a0d7ca7.svg"></a> 
 </div>
