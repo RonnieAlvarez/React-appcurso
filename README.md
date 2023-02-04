@@ -2,10 +2,12 @@
  <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines=Proyecto+Final+Curso+Reactjs;Carrera+Full+Stack+CODERHOUSE!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">
 </p>
- 
- [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Proyecto+Final+Curso+Reactjs;Carrera+Full+Stack+CODERHOUSE)](https://git.io/typing-svg)
-#PROYECTO CURSO REACT
-[Mel On-line Store](hhtp://react.tvrac.net)
+  <p align="center">
+ [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Mel+On+Line+Store;)](https://git.io/typing-svg)
+ </p>
+   <a href="http://www.react.tvrac.net" alt="pagina web" title="Mel On-Line Store">
+    <img src="https://freshidea.com/jonah/app/github-search-results/readme-typing-svg/index.php"/></a>
+[Mel On-line Store](http://react.tvrac.net)
  </div>
 
 ![](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/Presentación2.gif)
@@ -14,7 +16,7 @@ Si estás buscando una gran selección de prendas de vestir, calzado y accesorio
 
 ![](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/descripcion.gif)
 
-##Dependencias
+## <H2>Dependencias</h2>
 
 @fontawesome 6.2.1 , bootstrap: 5.2.3,  firebase: 9.16.0,  react: 18.2.0,  react-bootstrap: 2.7.0,
 react-dom: 18.2.0,  react-router-dom: 6.8.0,  react-scripts: 5.0.1, Notiflix, ReactToPrint, SweetAlert2.
