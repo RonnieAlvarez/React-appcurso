@@ -6,8 +6,11 @@ Si estás buscando una gran selección de prendas de vestir, calzado y accesorio
 
 Este proyecto fue realizado con las siguientes librerias y dependencias.
 
-@fortawesome 6.2.1 , bootstrap: 5.2.3,  firebase: 9.16.0,  react: 18.2.0,  react-bootstrap: 2.7.0,
-react-dom: 18.2.0,  react-router-dom: 6.8.0,  react-scripts: 5.0.1
+@fontawesome 6.2.1 , bootstrap: 5.2.3,  firebase: 9.16.0,  react: 18.2.0,  react-bootstrap: 2.7.0,
+react-dom: 18.2.0,  react-router-dom: 6.8.0,  react-scripts: 5.0.1, Notiflix, ReactToPrint, SweetAlert2.
+
+Con estas dependencias se logro un maquetación y funcionalidad excelente, el valor que aportan cada una de ellas al proyecto es lo esperado.
+FontAwesome para los iconos, bootstrap para botones tarjetas y maquetación general, firebase como base de datos y autenticación, Notiflix y SweetAlert2 para los mensajes a pantalla, y ReactToPrint para imprimir o generar el archivo Pdf de la orden de compra.
 
 El Proyecto simula una tienda de comercio en linea que tiene 4 categorias de articulos para la venta, las cuales se muestran en el menu principal ademas de la opcion de todas los articulos.
 
