@@ -36,3 +36,7 @@ Aqui puede descargar un archivo Pdf con la Descripción del proyecto
   <a href = "mailto:ronnie.alvarezc@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/ronniealvarezc506" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
+
+<div align="center">
+https://raw.githubusercontent.com/RonnieAlvarez/React-appcurso/main/src/components/comp_imgs/logo-mel.svg
+</div>
