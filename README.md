@@ -26,8 +26,8 @@ El Proyecto simula una tienda de comercio en linea que tiene 4 categorias de art
 
 Ademas tiene un listado de los vendedores autorizados, con los que se podrian poner en contacto, tambien tiene el area del Carrito donde se listan los productos seleccionados para la compra, donde le aparecerá el  monto total de esa compra.
 
-Aqui puede descargar un archivo Pdf con la Descripción del proyecto
-[Presentación en PDF](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/Presentacion.pdf)
+# Aqui puede descargar un archivo Pdf con la Descripción del proyecto
+## [Presentación en PDF](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/Presentacion.pdf)
 
 
 <div align="center">
