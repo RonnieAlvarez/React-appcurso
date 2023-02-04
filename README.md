@@ -1,4 +1,8 @@
 <div align="center">
+ <p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Proyecto+Final+Curso+Reactjs;Carrera+Full+Stack+CODERHOUSE!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">
+</p>
+ 
  [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Proyecto+Final+Curso+Reactjs;Carrera+Full+Stack+CODERHOUSE)](https://git.io/typing-svg)
 #PROYECTO CURSO REACT
 [Mel On-line Store](hhtp://react.tvrac.net)
