@@ -3,14 +3,14 @@
   <img src="https://readme-typing-svg.demolab.com/?lines=Proyecto+Final+Curso+Reactjs;Carrera+Full+Stack+CODERHOUSE!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">
 </p>
    <div align="center">
-    <a href="http://www.react.tvrac.net" alt="pagina web" title="Mel On-Line Store">
+    <a href="http://www.react.tvrac.net" alt="pagina web" title="Visita nuestra página Mel On-Line Store">
  <img src="https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/components/comp_imgs/melstore.png">   </a>
 </div>
 
 
 ![](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/Presentación2.gif)
 
-Si estás buscando una gran selección de prendas de vestir, calzado y accesorios para completar tu guardarropa, entonces echa un vistazo a la página web de MEL On-line Store. Esta empresa cuenta con excelentes precios y ofrece productos para hombres y mujeres. El sitio web ofrece una amplia gama de artículos que van desde camisetas hasta chaquetas y pantalones, además de sus últimas tendencias en calzado tanto masculinos como femeninos. Tambien tiene su departamento de electrónicos y mubles para el hogar. Además, los compradores pueden disfrutar de descuentos y promociones exclusivas realizadas por la compañía. Las formas de pago son seguras y fáciles; hay envío gratuito a cualquier parte del mundo u opciones rápidas si el pedido es urgente. Así que si quieres aprovechar todas nuestras ventajas y calidad en nuestros productos, estás a un click de lograrlo, anda que esperas registrate en  **http://www.react.tvrac.net/**
+## Si estás buscando una gran selección de prendas de vestir, calzado y accesorios para completar tu guardarropa, entonces echa un vistazo a la página web de MEL On-line Store. Esta empresa cuenta con excelentes precios y ofrece productos para hombres y mujeres. El sitio web ofrece una amplia gama de artículos que van desde camisetas hasta chaquetas y pantalones, además de sus últimas tendencias en calzado tanto masculinos como femeninos. Tambien tiene su departamento de electrónicos y mubles para el hogar. Además, los compradores pueden disfrutar de descuentos y promociones exclusivas realizadas por la compañía. Las formas de pago son seguras y fáciles; hay envío gratuito a cualquier parte del mundo u opciones rápidas si el pedido es urgente. Así que si quieres aprovechar todas nuestras ventajas y calidad en nuestros productos, estás a un click de lograrlo, anda que esperas registrate en  **http://www.react.tvrac.net/**
 
 ![](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/descripcion.gif)
 
@@ -36,5 +36,6 @@ Ademas tiene un listado de los vendedores autorizados, con los que se podrian po
 </div>
 
 <div align="center">
+ <a href="http://www.react.tvrac.net" alt="pagina web" title="Visita nuestra página Mel On-Line Store">
  <img src="https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/components/comp_imgs/logoMel.png"></a> 
 </div>
