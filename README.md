@@ -1,5 +1,7 @@
+<div align="center">
 #PROYECTO CURSO REACT
 [Mel On-line Store](hhtp://react.tvrac.net)
+ </div>
 
 ![](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/Presentación2.gif)
 
@@ -21,3 +23,9 @@ Ademas tiene un listado de los vendedores autorizados, con los que se podrian po
 
 Aqui puede descargar un archivo Pdf con la Descripción del proyecto
 [Presentación en PDF](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/Presentacion.pdf)
+
+
+<div align="center">
+  <a href = "mailto:ronnie.alvarezc@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/ronniealvarezc506" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+</div>
