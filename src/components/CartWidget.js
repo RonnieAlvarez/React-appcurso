@@ -1,13 +1,13 @@
-import React from "react"
-import shoppingCart from "./comp_imgs/shopping_cart.svg"
-import Container from "react-bootstrap/Container"
-import Navbar from "react-bootstrap/Navbar"
-import { useContext } from "react"
-import { contexto } from "../context/CustomProvider"
-import { Link } from "react-router-dom"
+import React from "react";
+import shoppingCart from "./comp_imgs/shopping_cart.svg";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import { useContext } from "react";
+import { contexto } from "../context/CustomProvider";
+import { Link } from "react-router-dom";
 
 export const CartWidget = () => {
-  const { cantArticulos } = useContext(contexto)
+  const { cantArticulos } = useContext(contexto);
   return (
     <div>
       <Navbar>
@@ -30,5 +30,5 @@ export const CartWidget = () => {
         </Container>
       </Navbar>
     </div>
-  )
-}
+  );
+};

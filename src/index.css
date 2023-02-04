@@ -18,6 +18,7 @@ body {
   background-color: #2c3e50 !important;
   color: aliceblue !important;
 }
+
 .beauty-spa {
   font-family: "Lobster", cursive;
   font-size: 1.2rem !important;
@@ -25,7 +26,7 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
-.textsombra{
+.textsombra {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .inputs {
@@ -67,7 +68,7 @@ body {
 }
 .content {
   grid-area: content;
-  height: calc(100vh - 200px)!important;
+  height: calc(100vh - 200px) !important;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -75,7 +76,7 @@ body {
   overflow: auto;
   scroll-behavior: smooth;
   padding-left: 15px;
-  object-fit: scale-down!important;
+  object-fit: scale-down !important;
   color: #2c3e50 !important;
 }
 .detailcontent {
@@ -84,7 +85,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  object-fit: scale-down!important;
+  object-fit: scale-down !important;
   align-items: center;
 }
 .detailproduct {
@@ -108,20 +109,17 @@ footer {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  /* justify-content: space-evenly; */
-  /* object-fit: scale-down!important; */
   transition: transform 250ms;
-  padding: 3px!important;
+  padding: 3px !important;
 }
 .footertext {
   color: #add8e6;
 }
 .product:hover {
-  /* opacity: 0.8; */
-  transform: translateY(-3px);
+  transform: scale(1.05);
 }
 .productagregar:hover {
-  transform: translateY(-18px);
+  transform: scale(1.05);
 }
 
 .btnColor {
@@ -132,9 +130,13 @@ footer {
 .thickOutlined {
   color: white;
   font-weight: bolder;
-  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black;
 }
-.white{
+.white {
   color: white;
 }
 .badgeColor {
@@ -144,37 +146,34 @@ footer {
   padding: 3px 8px;
   color: rgb(5, 5, 5) !important;
 }
-/*  Estilos para el carrito de compras y sus elementos*/
-.cart-item{
+.cart-item {
   display: flex;
   width: 80vw;
-  /* height: 10vh; */
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 5px;
   margin-bottom: 5px;
   background-color: white;
-  color: #2c3e50;;
+  color: #2c3e50;
   border: 3px solid rgba(238, 123, 123, 0.68);
   border-radius: 5px;
   box-shadow: 0px 5px 13px 0px rgb(0 0 0 / 15%);
 }
-.item-contain{
+.item-contain {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-around;
 }
-.img-item{
-  /* width: 10vw; */
+.img-item {
   height: 9vh;
   display: flex;
   justify-content: stretch;
   align-items: center;
   object-fit: contain;
 }
-.img-cart{
+.img-cart {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -187,31 +186,31 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     overflow: scroll;
-    object-fit: scale-down!important;
+    object-fit: scale-down !important;
   }
   .produc {
     margin: 5px 0 !important;
   }
   .detailproduct {
     display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  object-fit: scale-down;
-  overflow: auto;
-}
-.detailcontent {
-  grid-area: content;
-  height: calc(100vh - 160px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  object-fit: scale-down!important;
-  margin-top: 50px!important;
-}
-.detailProductTam{
-  overflow: scroll;
-  height: calc(100vh - 350px);
-  object-fit: scale-down!important;
-}
+    flex-direction: column !important;
+    justify-content: center !important;
+    object-fit: scale-down;
+    overflow: auto;
+  }
+  .detailcontent {
+    grid-area: content;
+    height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: scale-down !important;
+    margin-top: 50px !important;
+  }
+  .detailProductTam {
+    overflow: scroll;
+    height: calc(100vh - 350px);
+    object-fit: scale-down !important;
+  }
 }

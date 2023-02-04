@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { contexto } from "../context/CustomProvider";
 import { CartItems } from "./CartItems";
-import { useAuthValue } from "../AuthContext";
+import { useAuthValue } from "../auth/AuthContext";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { Link } from "react-router-dom";
@@ -11,12 +11,6 @@ import { Notify } from "notiflix";
 import { FaBackward, FaTrash } from "react-icons/fa";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
-
-// import { Confirm } from 'notiflix';
-
-
-
-// import { Confirm } from 'notiflix/build/notiflix-confirm-aio';
 
 export const Carrito = () => {
   const { cart, vtotal, cantArticulos, vaciarCarrito, formatNumber, tempo } =

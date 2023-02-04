@@ -1,15 +1,14 @@
-import React from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { contexto } from "../context/CustomProvider"
-import { useContext } from "react"
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { contexto } from "../context/CustomProvider";
+import { useContext } from "react";
 
 export const CartItems = (props) => {
-    const {formatNumber}= useContext(contexto)
+  const { formatNumber } = useContext(contexto);
 
-    return (
+  return (
     <div className="container">
       <div className="Row d-flex flex-row align-items-center justify-content-evenly">
-      {/* <div className="Row w-100 d-flex flex-row  align-items-center justify-content-evenly"></div> */}
         <span className="col-sm img-item">
           <img
             className="img-cart"
@@ -18,7 +17,7 @@ export const CartItems = (props) => {
           />
         </span>
         <span className="col-sm">
-          <span>Id:{' '}{props.item.id.substring(0,5)} </span>
+          <span>Id: {props.item.id.substring(0, 5)} </span>
         </span>
         <span className="col-sm text-start">
           <span>{props.item.cantidad} </span>
@@ -34,5 +33,5 @@ export const CartItems = (props) => {
         </span>
       </div>
     </div>
-  )
-}
+  );
+};

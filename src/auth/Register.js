@@ -9,8 +9,8 @@
  * @returns A function that is being exported to another file.
  */
 import {useState} from 'react'
-import './css/Forms.css'
-import {auth} from './firebase'
+import '../css/Forms.css'
+import {auth} from '../firebase'
 import {useNavigate, Link} from 'react-router-dom'
 import {createUserWithEmailAndPassword, sendEmailVerification} from 'firebase/auth'
 import {useAuthValue} from './AuthContext'

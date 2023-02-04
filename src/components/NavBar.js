@@ -1,12 +1,8 @@
-/**
- * It renders a NavBar with a logo, a title, and a few buttons.
- * @returns A NavBar component that is being exported.
- */
-import React from "react"
-import Nav from "react-bootstrap/Nav"
-import logo from "./comp_imgs/logo-mel.svg"
-import { CartWidget } from "./CartWidget"
-import { Link } from "react-router-dom"
+import React from "react";
+import Nav from "react-bootstrap/Nav";
+import logo from "./comp_imgs/logo-mel.svg";
+import { CartWidget } from "./CartWidget";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -43,7 +39,7 @@ export const NavBar = () => {
         </div>
       </Nav>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

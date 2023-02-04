@@ -1,7 +1,7 @@
-import './css/Profile.css'
+import '../css/Profile.css'
 import {useAuthValue} from './AuthContext'
 import { signOut } from 'firebase/auth' 
-import { auth } from './firebase'
+import { auth } from '../firebase'
 
 
 function Profile() {

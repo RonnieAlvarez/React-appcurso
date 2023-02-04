@@ -1,5 +1,5 @@
-import Carousel from "react-bootstrap/Carousel"
-import "../css/CorouselCss.css"
+import Carousel from "react-bootstrap/Carousel";
+import "../css/CorouselCss.css";
 
 function IndividualIntervalsExample() {
   return (
@@ -57,7 +57,7 @@ function IndividualIntervalsExample() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-  )
+  );
 }
 
-export default IndividualIntervalsExample
+export default IndividualIntervalsExample;

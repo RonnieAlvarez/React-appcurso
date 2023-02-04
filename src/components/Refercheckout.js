@@ -1,15 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Refercheckout = (props) => {
-    console.log(props)
-    const {ref} = props.referencia
+  const { ref } = props.referencia;
   return (
-    <div className='center'>
-    <h1>Referencia de su compra</h1>
-    <p>{ref}</p>
-
+    <div className="center">
+      <h1>Referencia de su compra</h1>
+      <p>{ref}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Refercheckout
+export default Refercheckout;

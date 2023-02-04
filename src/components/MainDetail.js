@@ -1,15 +1,12 @@
-import React from "react"
-import ItemDetailContainer from "./ItemDetailContainer"
+import React from "react";
+import ItemDetailContainer from "./ItemDetailContainer";
 
 export const MainDetail = () => {
-
   return (
     <div className="App">
-    <ItemDetailContainer/>
+      <ItemDetailContainer />
     </div>
-  )
-}
+  );
+};
 
-export default Main
-
-
+export default Main;

@@ -10,16 +10,16 @@ import CustomProvider from "./context/CustomProvider";
 import Carrito from "./components/Carrito";
 import UserListContainer from "./components/UserListContainer";
 import UserDetailContainer from "./components/UserDetailContainer";
-import Register from "./Register";
-import { AuthProvider } from "./AuthContext";
+import Register from "./auth/Register";
+import { AuthProvider } from "./auth/AuthContext";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import Login from "./Login";
-import VerifyEmail from "./VerifyEmail";
-import Profile from "./Profile";
-import PrivateRoute from "./PrivateRoute";
+import Login from "./auth/Login";
+import VerifyEmail from "./auth/VerifyEmail";
+import Profile from "./auth/Profile";
+import PrivateRoute from "./auth/PrivateRoute";
 import { Checkout } from "./components/Checkout";
-import Refercheckout from './components/Refercheckout';
+import Refercheckout from "./components/Refercheckout";
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState(null);

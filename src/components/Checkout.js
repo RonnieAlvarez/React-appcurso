@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { contexto } from "../context/CustomProvider";
 import { useContext, useState } from "react";
-import { useAuthValue } from "../AuthContext";
+import { useAuthValue } from "../auth/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./../firebase";
@@ -11,8 +11,7 @@ import withReactContent from "sweetalert2-react-content";
 import { Notify } from "notiflix";
 import { Button, Table } from "react-bootstrap";
 import { useReactToPrint } from "react-to-print";
-import 'bootstrap/dist/css/bootstrap.min.css'
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Checkout = () => {
   const componentRef = useRef();
@@ -51,7 +50,7 @@ export const Checkout = () => {
   const MySwal = withReactContent(Swal);
 
   const verifica = () => {
-    console.log("Verific")
+    console.log("Verific");
     if (nombre === "" || nombre.length < 8) {
       return false;
     } else if (telefono === "" || telefono.length < 8) {
@@ -61,9 +60,8 @@ export const Checkout = () => {
     }
   };
 
-
   const confirmCkout = () => {
-    if (!check&&verifica()) {
+    if (!check && verifica()) {
       MySwal.fire({
         title: "Hacer CheckOut?",
         text: "No podra revertir esta opción!",
@@ -81,7 +79,11 @@ export const Checkout = () => {
         }
       });
     } else {
-      Swal.fire({icon: 'error',title: 'Oops...Falta!', text:'Nombre, Apellidos y Telefono OBLIGATORIO.'});
+      Swal.fire({
+        icon: "error",
+        title: "Oops...Falta!",
+        text: "Nombre, Apellidos y Telefono OBLIGATORIO.",
+      });
     }
   };
   const store = async () => {
@@ -193,7 +195,8 @@ export const Checkout = () => {
               <Table
                 style={{ width: "90%", heigth: "100%" }}
                 responsive
-                className=" mx-auto my-2">
+                className=" mx-auto my-2"
+              >
                 <thead className=" bg-dark bg-opacity-25">
                   <tr>
                     <th>Linea</th>
@@ -223,11 +226,11 @@ export const Checkout = () => {
               </Table>
               <div
                 style={{ width: "95%" }}
-                className=" d-flex flex-row justify-content-end text-end me-2 mb-2">
+                className=" d-flex flex-row justify-content-end text-end me-2 mb-2"
+              >
                 <div>
                   <span className="me-2">
-                    Cantidad Articulos:{"\u00A0"}{" "}
-                    {cantArticulos}{" "}
+                    Cantidad Articulos:{"\u00A0"} {cantArticulos}{" "}
                   </span>
                 </div>
                 <span>

@@ -1,17 +1,17 @@
-import Card from "react-bootstrap/Card"
-import "bootstrap/dist/css/bootstrap.css"
-import Button from "react-bootstrap/Button"
-import producto1 from "./comp_imgs/imgProduct.png"
-import OverlayTrigger from "react-bootstrap/OverlayTrigger"
-import Popover from "react-bootstrap/Popover"
-import { Link } from "react-router-dom"
+import Card from "react-bootstrap/Card";
+import "bootstrap/dist/css/bootstrap.css";
+import Button from "react-bootstrap/Button";
+import producto1 from "./comp_imgs/imgProduct.png";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
+import { Link } from "react-router-dom";
 
 export const Item = (props) => {
-  const { id, title, price, images, description } = props.producto
+  const { id, title, price, images, description } = props.producto;
   const shortDescription =
     description.substring(0, 20) + "..."
       ? description.substring(0, 20) + "..."
-      : " "
+      : " ";
 
   const popover = (
     <Popover
@@ -21,7 +21,7 @@ export const Item = (props) => {
       <Popover.Header as="h4">{title}</Popover.Header>
       <Popover.Body>{description}</Popover.Body>
     </Popover>
-  )
+  );
 
   const Popollamada = () => (
     <OverlayTrigger trigger="click" placement="top" overlay={popover}>
@@ -29,7 +29,7 @@ export const Item = (props) => {
         Ver Descripcíon{" "}
       </Button>
     </OverlayTrigger>
-  )
+  );
 
   return (
     <div className="product mx-1 my-sm-1 align-items-center">
@@ -57,7 +57,7 @@ export const Item = (props) => {
         </Card.Body>
       </Card>
     </div>
-  )
-}
+  );
+};
 
-export default Item
+export default Item;

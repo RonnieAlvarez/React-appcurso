@@ -1,10 +1,10 @@
-import ItemCount from "./ItemCount"
-import React from "react"
-import Card from "react-bootstrap/Card"
-import Container from "react-bootstrap/Container"
+import ItemCount from "./ItemCount";
+import React from "react";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
 
 const ItemDetail = (props) => {
-  const { title, images, description, price, stock } = props.producto
+  const { title, images, description, price, stock } = props.producto;
   return (
     <div className="Container mt-5 detailcontent">
       <h2>{title}</h2>
@@ -42,7 +42,7 @@ const ItemDetail = (props) => {
         </Card>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ItemDetail
+export default ItemDetail;
