@@ -41,5 +41,5 @@ Aqui puede descargar un archivo Pdf con la Descripción del proyecto
 </div>
 
 <div align="center">
- <img src="http://www.react.tvrac.net/static/media/logo-mel.f8c8f1afd89e18736b4adcd20a0d7ca7.svg"></a> 
+ <img src="https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/components/comp_imgs/logoMel.png"></a> 
 </div>
