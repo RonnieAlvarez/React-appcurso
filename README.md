@@ -5,13 +5,11 @@
   <p align="center">
     <img src="https://readme-typing-svg.demolab.com/?lines=Mel+On+Line+Store!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">
    </p>
-   (http://react.tvrac.net)
-   
-  
-   <a href="http://www.react.tvrac.net" alt="pagina web" title="Mel On-Line Store">
-  </a>
-[Mel On-line Store](http://react.tvrac.net)
- </div>
+   <div align="center">
+    <a href="http://www.react.tvrac.net" alt="pagina web" title="Mel On-Line Store">
+ <img src="https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/components/comp_imgs/melstore.png">   </a>
+</div>
+
 
 ![](https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/md_Images/Presentación2.gif)
 
