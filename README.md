@@ -3,7 +3,7 @@
   <img src="https://readme-typing-svg.demolab.com/?lines=Proyecto+Final+Curso+Reactjs;Carrera+Full+Stack+CODERHOUSE!&font=Fira%20Code&center=true&width=380&height=50&duration=4000&pause=1000">
 </p>
    <div align="center">
-    <a href="http://www.react.tvrac.net" alt="pagina web" title="Visita nuestra página Mel On-Line Store">
+    <a href="https://proy-43575.netlify.app/" alt="pagina web" title="Visita nuestra página Mel On-Line Store">
  <img src="https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/components/comp_imgs/melstore.png">   </a>
 </div>
 
@@ -37,6 +37,6 @@ Ademas tiene un listado de los vendedores autorizados, con los que se podrian po
 </div>
 
 <div align="center">
- <a href="http://www.react.tvrac.net" alt="pagina web" title="Visita nuestra página Mel On-Line Store">
+ <a href="https://proy-43575.netlify.app/" alt="pagina web" title="Visita nuestra página Mel On-Line Store">
  <img src="https://github.com/RonnieAlvarez/React-appcurso/blob/main/src/components/comp_imgs/logoMel.png"></a> 
 </div>
